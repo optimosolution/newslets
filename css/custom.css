@@ -40,7 +40,7 @@ p.text-muted, .footerlinks {
     margin: 5px 0px 5px 0px;
 }
 p.small {
-    font-size: 80%;
+    font-size: 62%;
 }
 .footerlinks a {
     padding: 0px 5px 0px 5px;
@@ -172,6 +172,7 @@ p.small {
 }
 .nomargin {
     margin: 0 !important;
+    height: 64px;
 }
 .nomarginbottom,.nomarginb{margin-bottom:0px !important;}
 .nomargintop,.nomargint{margin-top:0px !important;}
@@ -183,6 +184,8 @@ p.small {
 .paddingtb, .paddingbt {
     padding-bottom: 7px;
     padding-top: 7px;
+    color: #666;
+    font-size: 13px;
 }
 .paddingleft {
     padding-left: 7px;
@@ -322,7 +325,9 @@ menu {
     padding-left:5%;
 }
 .brandtextpaddingnew{
-    padding-left:5%;
+    position: relative;
+    top: -20px;
+    left: 0;
 }
 .pullup{margin-top:-20%;z-index:-1;}
 .pulluptopmenu{margin-top:-2.5%;}
@@ -396,9 +401,58 @@ menu {
 .space-10{
     margin-top: 10px;
 }
+.space-20{
+    margin-top: 20px;
+}
+.space-30{
+    margin-top: 30px;
+}
+.space-40{
+    margin-top: 40px;
+}
+.space-50{
+    margin-top: 50px;
+}
 .nowrap{
     white-space: nowrap;
 }
 .logo-margin{
     padding-left: 25px;
+    /*position: relative;
+    top: -20px;*/
+}
+.nav-top-bgcolor{
+    background-color: #575556;
+    height: 20px;
+}
+.footer-bottom-bgcolor{
+    background-color: #575556;
+    height: 35px;
+}
+.text-custom-merun{
+    color: #303382;
+}
+.more-action-bg{
+    text-align: center;
+    padding: 5px;
+    background-color: #DDD;
+}
+.text-analytics{
+    font-size: 24px;
+}
+.text-analytics-ass{
+    color: #999;
+}
+.text-analytics-header{
+    background-color: #F69C7A;
+    color: #FFF;
+    text-align: center;
+}
+.text-analytics-content{
+    background-color: #F5AB7A;
+    text-align: center;
+}
+.td-small-height{
+    height: 10px;
+    font-size:0px;
 }

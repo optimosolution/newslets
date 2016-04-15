@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <title>NewsLets | User Anonymous</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta charset="UTF-8">
+        <meta name=description content="">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/b3.css" rel="stylesheet" media="screen">
+        <link href="css/custom.css" rel="stylesheet" media="screen">
+        <link href="css/dashboard.min.css" rel="stylesheet" media="screen">
+        <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="screen">
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="js/ie-emulation-modes-warning.js"></script>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <!-- Fixed navbar navbar-fixed-top-->
+        <nav class="navbar navbar-default nomargin" role="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Share" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Share" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="icon-mycomments fa-5x paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Share</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="icon-myengagements fa-5x paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown paddingtop">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Shareo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Share" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="fa fa-4x fa-share-square-o">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Share</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id=" Archives" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title=" Archives" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="fa-4x icon-myarchive paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm">  Archives</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="fa fa-4x fa-mobile">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="icon-mycomments fa-4x paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="icon-mycomments fa-4x paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="icon-mycomments fa-4x paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                                <div class="dropdown">                        
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <i class="icon-mycomments fa-4x paddinglr">
+                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
+                                        </i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>                        
+                        </div>                        
+                    </div>    
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        Top right corner.....
+                    </div>
+                </div>
+        </nav>
+        <!-- Begin page content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
+                            <h4>User Anonymous</h4>
+                            <h6>Feel the power of<br />being anonymous</h6>
+                            <div class="space-40"></div>
+                            <h5 class="text-pink">u@sabbir/visualizer/dhaka</h5>
+                            <div class="space-20"></div>
+                            <a href="#"><i class="fa fa-5x fa-gear"></i></a>
+                            <div class="space-20"></div>
+                            <a href="#"><img class="img-responsive center-block" src="img/bg/newslets_logo_ua.png"></a>
+                            <div class="space-50"></div>
+                            <h4 class="text-pink text-left">Follow Objectively</h4>
+                            <div class="space-20"></div>
+                            <p class="text-muted text-left">Select to view</p>
+                            <div class="checkbox text-left">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    User Anonymous<br />
+                                    <span class="small text-custom-merun">Specific Anonymous+</span>
+                                </label>
+                            </div>
+                            <div class="checkbox text-left">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Following All SJID<span class="text-danger">+</span><br />
+                                    <span class="small text-custom-merun">Specific SJID+</span>
+                                </label>
+                            </div>
+                            <div class="checkbox text-left">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Following All Orgs<span class="text-danger">+</span><br />
+                                    <span class="small text-custom-merun">Specific Organizations+</span>
+                                </label>
+                            </div>
+                            <div class="checkbox text-left">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Following All Brands<span class="text-danger">+</span><br />
+                                    <span class="small text-custom-merun">Specific Brands+</span>
+                                </label>
+                            </div>
+                            <div class="checkbox text-left">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    Following All Celebs<span class="text-danger">+</span><br />
+                                    <span class="small text-custom-merun">Specific Celebs+</span>
+                                </label>
+                            </div>
+                            <a href="#" class="btn btn-danger btn-block">Write your Thoughtlet</a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 borderleft">
+                            <p>Posts from all categories mixed by default</p>
+                            <div class="space-20"></div>                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more-action-bg">More Actions Arrived</div>
+                            <div class="space-10"></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding center-block mCustomScrollbar _mCS_1 mCS-autoHide" id="contenttoreader" style="height: 340px; overflow: visible;">
+                                <div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" id="mCSB_1" tabindex="0">
+                                    <div dir="ltr" style="position: relative; top: 0px; left: 0px;" class="mCSB_container" id="mCSB_1_container">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                            <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                            <p>Father in jail For confiscating his daughter's iPhone</p>
+                                            <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  
+                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                            <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                            <p>Today is just another Thursday</p>
+                                            <a post_id="20" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  
+                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>If you want to be Creative,Then this is your "Golden Chance"</p><a post_id="149" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>রাষ্ট্রদ্রোহের মামলায় খালেদার সময়ের আবেদন মঞ্জুর</p><a post_id="300" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>জয় আসবেই</p><a post_id="334" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  
+                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/3/Posting/d70c3b4c-b27b-4ac0-9a83-0392cb99b4d7.jpg"> <p>this is my new Post</p><a post_id="342" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a>
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>বেলি</p><a post_id="714" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>স্বপ্ন </p><a post_id="715" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center-block paddinglr">
+                                <br>
+                                <form role="form" class="form-horizontal col-lg-12">
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Read Newslets by Country</label>
+                                        <select placeholder="Read News By Country" name="country_id" id="country_id" class="form-control"><option value="">Read Newslets by Country</option>
+                                            <option value="1">Afghanistan</option>
+                                            <option value="2">Albania</option>
+                                            <option value="3">Algeria</option>                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Read Newslets by Issue</label>
+                                        <select placeholder="Read News By Issue" name="issue_id" id="issue_id" class="form-control"><option value="">Read Newslets by Issue</option>
+                                            <option value="1">Local Economic</option>
+                                            <option value="2">Local Agriculture</option>                                            
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Read Newslets by Location</label>
+                                        <input type="text" placeholder="Read Newslets by Location" id="" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="sr-only">Read by Search who you are not following</label>
+                                        <input type="text" placeholder="Read by Search who you are not following" id="" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 borderleft">
+                            <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                <p>You clicked on these Posts</p>
+                            </div>
+                            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                <h4 style="color:red" class="panel-heading nomargin text-right">READER</h4>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mCustomScrollbar _mCS_2 mCS-autoHide" id="readersection" style="height: 590px; overflow: visible;"><div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" id="mCSB_2" tabindex="0"><div dir="ltr" style="position: relative; top: 0px; left: 0px;" class="mCSB_container" id="mCSB_2_container"><div post_id="794" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে .....</strong> <p> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে। ত্বক, চোখ ও চুলের যত্ন থেকে ক্যান্সারের মতো রোগ প্রতিরোধেও এই ফল রাখতে পারে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -359px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/7eede573-bf2f-44f6-9831-29015a97a845.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="836" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>সবাইকে বাংলা শুভ নববর্ষ 1423</strong> <p> তাপস নিঃশ্বাস বায়ে মুমূর্ষুরে উড়ায়ে  দিতে আর কয়েক ঘন্টা পরেই প্রভাতের অলোকচ্ছ টায় আবহমান এ বাংলার দিক-দিগন্ত উদ্ভাসিত করে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -271px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/f06ceb29-4d63-49f1-9397-94dcbd1c05b7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="717" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>চোখের লোনা জল </strong> <p> অনেক বেশী ভালোবাসি তোমায়।
+                                                শুধু তোমার জন্য,
+                                                আমি আর একবার হাসতে চাই,
+                                                আর একবার প্রানখুলে বাচতে চাই,
+                                                আর একবার নিশ্বাস ভরা বুকে বলতে চাই
+                                                ভালোবাসি!
+                                                ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -319px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/d5839a96-d9aa-4bda-a85e-f2e896f3bbc8.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="716" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>প্রিয় মুখ</strong> <p> হৃদয় আঙিনায় একদা দীপ জ্বালিয়েছিল যে মুখ তা আজ আর ভালো করে মনেও পড়ে না। সময় ক্রমাগত সব কিছু কেড়ে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -382px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/636a4e43-81a1-4e57-8989-99a9e51f02e7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="9" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Father in jail For confiscating his daughter's iPhone</strong> <p> "My client never committed a crime," Gray told Mashable. "He was just trying to be a father."    ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/a5ef7b8b-7c91-42f8-9517-793102017680.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="300" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>রাষ্ট্রদ্রোহের মামলায় খালেদার সময়ের আবেদন মঞ্জুর</strong> <p> মামলার বাদী মমতাজ উদ্দিন মেহেদীর আইনজীবীরা খালেদা জিয়ার বিরুদ্ধে গ্রেপ্তারি পরোয়ানা জারির আবেদন করেছেন। শুনানিতে খালেদা জিয়ার আইনজীবী সানাউল্লাহ মিয়া ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/12c90800-6955-452a-9a4d-d442e98ba16c.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="20" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Today is just another Thursday</strong> <p> Now i am going to tell you the real truth behind this outright cheating on the employment. I have to ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/ad4214ed-4b1c-4d29-a65b-07de5ad43e71.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="8" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Snow strom is no good to enjoy</strong> <p> Yap that is the immediate irony of few days of forced rests enjoying same noodles every time you wanna warm ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/80692d20-9bb3-4bed-9365-86a8213e2099.JPG"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="794" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে .....</strong> <p> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে। ত্বক, চোখ ও চুলের যত্ন থেকে ক্যান্সারের মতো রোগ প্রতিরোধেও এই ফল রাখতে পারে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -359px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/7eede573-bf2f-44f6-9831-29015a97a845.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="836" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>সবাইকে বাংলা শুভ নববর্ষ 1423</strong> <p> তাপস নিঃশ্বাস বায়ে মুমূর্ষুরে উড়ায়ে  দিতে আর কয়েক ঘন্টা পরেই প্রভাতের অলোকচ্ছ টায় আবহমান এ বাংলার দিক-দিগন্ত উদ্ভাসিত করে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -271px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/f06ceb29-4d63-49f1-9397-94dcbd1c05b7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="717" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>চোখের লোনা জল </strong> <p> অনেক বেশী ভালোবাসি তোমায়।
+                                                শুধু তোমার জন্য,
+                                                আমি আর একবার হাসতে চাই,
+                                                আর একবার প্রানখুলে বাচতে চাই,
+                                                আর একবার নিশ্বাস ভরা বুকে বলতে চাই
+                                                ভালোবাসি!
+                                                ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -319px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/d5839a96-d9aa-4bda-a85e-f2e896f3bbc8.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="716" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>প্রিয় মুখ</strong> <p> হৃদয় আঙিনায় একদা দীপ জ্বালিয়েছিল যে মুখ তা আজ আর ভালো করে মনেও পড়ে না। সময় ক্রমাগত সব কিছু কেড়ে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -382px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/636a4e43-81a1-4e57-8989-99a9e51f02e7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="9" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Father in jail For confiscating his daughter's iPhone</strong> <p> "My client never committed a crime," Gray told Mashable. "He was just trying to be a father."    ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/a5ef7b8b-7c91-42f8-9517-793102017680.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="300" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>রাষ্ট্রদ্রোহের মামলায় খালেদার সময়ের আবেদন মঞ্জুর</strong> <p> মামলার বাদী মমতাজ উদ্দিন মেহেদীর আইনজীবীরা খালেদা জিয়ার বিরুদ্ধে গ্রেপ্তারি পরোয়ানা জারির আবেদন করেছেন। শুনানিতে খালেদা জিয়ার আইনজীবী সানাউল্লাহ মিয়া ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/12c90800-6955-452a-9a4d-d442e98ba16c.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="20" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Today is just another Thursday</strong> <p> Now i am going to tell you the real truth behind this outright cheating on the employment. I have to ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/ad4214ed-4b1c-4d29-a65b-07de5ad43e71.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="8" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Snow strom is no good to enjoy</strong> <p> Yap that is the immediate irony of few days of forced rests enjoying same noodles every time you wanna warm ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/80692d20-9bb3-4bed-9365-86a8213e2099.JPG"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div></div></div><div class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" id="mCSB_2_scrollbar_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div oncontextmenu="return false;" style="position: absolute; min-height: 50px; height: 148px; top: 0px; display: block; max-height: 556px;" class="mCSB_dragger" id="mCSB_2_dragger_vertical"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+
+                        </div>
+                    </div>      
+                    <div class="space-10"></div>
+                    <hr style="border-top: 1px solid #000;" />
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <p><span class="text-analytics">Analytics/</span> <span class="text-analytics-ass">how are you doing so far?</span></p>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="text-analytics-header">Your Social Score</div>
+                        <div class="text-analytics-content"><span class="text-danger">1213</span></div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                        <div class="text-analytics-header">Frequency Of Writing Thoughtlets</div>
+                        <div class="text-analytics-content">Low <span class="text-danger">12</span> Medium <span class="text-danger">24</span> High <span class="text-danger">48</span></div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="text-analytics-header">Thoughtlets</div>
+                        <div class="text-analytics-content">With Pic.<span class="text-danger">46</span> Withouut Pic <span class="text-danger">46</span></div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                        <div class="text-analytics-header">Fringe Engaement</div>
+                        <div class="text-analytics-content">Edited <span class="text-danger">09</span> Deleted <span class="text-danger">13</span></div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p>Followed by <span class="text-danger">1149</span> <a href="#">View</a> Unfollowed by <span class="text-danger">137</span> since 1st Thinklets.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 more-action-bg text-left">
+                            <p>Result From your total of <span class="text-danger">92</span> Newslets/Thoughtlets <span class="text-muted">as of last posting</span></p>
+                        </div>
+                    </div>
+                    <div class="clearfix space-10"></div><br />
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <table class="table table-responsive">                         
+                            <tbody> 
+                                <tr class="active"> 
+                                    <td>User <span class="small">Following</span> <span class="pull-right">39</span></td> 
+                                    <td class="text-center"><a href="#">View</a></td> 
+                                    <td><span class="text-muted">Defollow 38</span></td> 
+                                    <td>Comments <span class="text-danger">36/<span class="text-custom-merun">15</span></span></td> 
+                                    <td>Archive <span class="text-danger">57/<span class="text-custom-merun">21</span></span></span></td> 
+                                    <td>Shared <span class="text-danger">39/<span class="text-custom-merun">38</span></span></span></td> 
+                                    <td>Useful <span class="text-danger">67/<span class="text-custom-merun">52</span></span></span></td> 
+                                    <td>Relevant <span class="text-danger">87</span></td> 
+                                </tr> 
+                                <tr> 
+                                    <td colspan="8" class="td-small-height">&nbsp;</td> 
+                                </tr> 
+                                <tr class="active"> 
+                                    <td>Other SJID <span class="pull-right">108</span></td> 
+                                    <td class="text-center"><a href="#">View</a></td> 
+                                    <td><span class="text-muted">Defollow 38</span></td> 
+                                    <td>Comments <span class="text-danger">33</span></td> 
+                                    <td>Archive <span class="text-danger">53</span></td> 
+                                    <td>Shared <span class="text-danger">34</span></td> 
+                                    <td>Useful <span class="text-danger">64</span></td> 
+                                    <td>Relevant <span class="text-danger">37</span></td> 
+                                </tr> 
+                                <tr> 
+                                    <td colspan="8" class="td-small-height">&nbsp;</td> 
+                                </tr> 
+                                <tr class="active"> 
+                                    <td>Organizations <span class="pull-right">073</span></td> 
+                                    <td class="text-center"><a href="#">View</a></td> 
+                                    <td><span class="text-muted">Defollow 38</span></td> 
+                                    <td>Comments <span class="text-danger">33</span></td> 
+                                    <td>Archive <span class="text-danger">53</span></td> 
+                                    <td>Shared <span class="text-danger">34</span></td> 
+                                    <td>Useful <span class="text-danger">64</span></td> 
+                                    <td>Relevant <span class="text-danger">37</span></td> 
+                                </tr> 
+                                <tr> 
+                                    <td colspan="8" class="td-small-height">&nbsp;</td> 
+                                </tr> 
+                                <tr class="active"> 
+                                    <td>Brands <span class="pull-right">159</span></td> 
+                                    <td class="text-center"><a href="#">View</a></td> 
+                                    <td><span class="text-muted">Defollow 38</span></td> 
+                                    <td>Comments <span class="text-danger">33</span></td> 
+                                    <td>Archive <span class="text-danger">53</span></td> 
+                                    <td>Shared <span class="text-danger">34</span></td> 
+                                    <td>Useful <span class="text-danger">64</span></td> 
+                                    <td>Relevant <span class="text-danger">37</span></td> 
+                                </tr> 
+                                <tr> 
+                                    <td colspan="8" class="td-small-height">&nbsp;</td> 
+                                </tr> 
+                                <tr class="active"> 
+                                    <td>Celebs <span class="pull-right">023</span></td> 
+                                    <td class="text-center"><a href="#">View</a></td> 
+                                    <td><span class="text-muted">Defollow 38</span></td> 
+                                    <td>Comments <span class="text-danger">33</span></td> 
+                                    <td>Archive <span class="text-danger">53</span></td> 
+                                    <td>Shared <span class="text-danger">34</span></td> 
+                                    <td>Useful <span class="text-danger">64</span></td> 
+                                    <td>Relevant <span class="text-danger">37</span></td> 
+                                </tr> 
+                            </tbody> 
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 borderleft">
+                    <div class="input-group">
+                        <input type="text" placeholder="Search by name of User by category" class="form-control">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>  
+                    <div class="space-10"></div>
+                    <p class="text-pink">Follow according to your objective</p>
+                    <div class="space-10"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding center-block mCustomScrollbar _mCS_3 mCS-autoHide" id="followobjectively" style="height: 550px; overflow: visible;">
+                        <div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" id="mCSB_3" tabindex="0">
+                            <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container" id="mCSB_3_container">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1/Cln0yOgAdb5JAXuCAHYbBa9dIO+kTVkk="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Vineet Kumar Tanwar</p><p> </p><p> Delhi, New Delhi, India</p></a>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1/uuSkLHTruXZYProxYn7KJ7G04E+329Q0="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Zaffar owais andrabi</p><p> </p><p> srinagar, jk, India</p></a></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1+kjl2kORH6pLidPimyDutA4SltogVuixo="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Divya Kumar Gupta</p><p> GBSSSS</p><p> Rohini, New Delhi, India</p></a></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1/AIjByMPNy28FptcUVhmY4Rt+E2H/yDXw="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>HASHIM ABBAS JANAI</p><p> </p><p> Madhapur, Telangana, India</p></a></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX18rwYFp5m55Ls1MDUqF28oUzoIcRal3/Go="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>SUBRATA KUMAR SEN</p><p> </p><p> Bangladesh</p></a></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX19u0VhHEydFiCof6B1YGHlIT/WBQGUfbZY="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>MD. ANOWARUL ISLAM</p><p> </p><p> BADDA, DHAKA, Bangladesh</p></a></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1+BcSBcrYNdjuIlXzOsebBC94bSOgytvlE="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Riazul Islam Rejon</p><p> </p><p> Nikunja-2, Dhaka, Bangladesh</p></a></div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX18cqSlKJytCz0Lm3e/dNXj4+UIqzsO35Mo="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Nusrat Noshin Nova</p><p> </p><p> Dhaka, Dhaka, Bangladesh</p></a></div>
+                            </div>
+                        </div>
+                        <div class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" id="mCSB_3_scrollbar_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div oncontextmenu="return false;" style="position: absolute; min-height: 50px; height: 368px; top: 0px; display: block; max-height: 516px;" class="mCSB_dragger" id="mCSB_3_dragger_vertical"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+                    <div class="space-10"></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="checkbox text-left">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="small text-custom-merun">Show all User Anonymous</span>
+                            </label>
+                        </div>
+                        <div class="checkbox text-left">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="small text-custom-merun">Show all Social Journalists</span>
+                            </label>
+                        </div>
+                        <div class="checkbox text-left">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="small text-custom-merun">Show all Organizations</span>
+                            </label>
+                        </div>
+                        <div class="checkbox text-left">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="small text-custom-merun">Show all Brand</span>
+                            </label>
+                        </div>
+                        <div class="checkbox text-left">
+                            <label>
+                                <input type="checkbox" value="">
+                                <span class="small text-custom-merun">Show all Celebs</span>
+                            </label>
+                        </div>                        
+                    </div>
+                    <img class="img-responsive" src="img/bg/Add.png">
+                </div>
+            </div>
+        </div>
+        <div class="space-10"></div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block nopadding">
+                        <div class="space-10"></div>
+                        <p class="copyrights">Copyrights &copy; Newslets Inc. 2015-16</p>                       
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block ">
+                        <div class="space-10"></div>
+                        <p>Be A Better User</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right nopadding">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding paddingtop pull-right">
+                            <ul class="footer-small-links">
+                                <li><a href="about.html">About</a></li>
+                                |
+                                <li> <a href="">Terms of Use</a></li>
+                                |
+                                <li> <a href="">Privacy Policy</a></li>
+                                |
+                                <li> <a href="">FAQ</a></li>
+                                |
+                                <li> <a href="">Career</a></li>
+                                |
+                                <li> <a href="">Contact Us</a></li>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery --> 
+        <script src="js/jquery-2.1.0.min.js"></script> 
+        <!-- Bootstrap JavaScript --> 
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/ie10-viewport-bug-workaround.js"></script> 
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.js"></script>
+    </body>
+</html>
