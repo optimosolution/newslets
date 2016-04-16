@@ -335,7 +335,6 @@ menu {
 .select-wrapper{
     float: left;
     display: inline-block;
-
     background: url("../img/bg/dropdown.png") no-repeat right center;
     cursor: pointer;
 }
@@ -347,7 +346,6 @@ menu {
 }
 .select-wrapper:hover{
     background: url("../img/bg/dropdown.png") no-repeat right center;
-
 }
 .select-wrapper .holder{
     display: block;
@@ -380,7 +378,14 @@ menu {
     -moz-opacity: 0;
 }
 .custom-select{background:#fff;}
-
+a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-text-link:active{
+    color: #05B2F4;
+    text-decoration: none;
+} 
+.navbar-nav > li > a{
+    padding-bottom: 9px;
+    padding-top: 15px;
+}
 .fontnormal {
     font-weight: normal;
 }
@@ -455,4 +460,64 @@ menu {
 .td-small-height{
     height: 10px;
     font-size:0px;
+}
+.nlicon_notification{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left 5px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_ring{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -100px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_share{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -185px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_archive{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -270px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_selfee{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -65px left 5px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_read_book{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -60px left -100px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_smile{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -60px left -185px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_pencil{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -58px left -270px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_new_write{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -140px left -100px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_head{
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -140px left -210px;
+    height: 65px;
+    width: 70px;
+    border: 0px;
 }

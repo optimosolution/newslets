@@ -28,7 +28,6 @@
         <link href="css/b3.css" rel="stylesheet" media="screen">
         <link href="css/custom.css" rel="stylesheet" media="screen">
         <link href="css/dashboard.min.css" rel="stylesheet" media="screen">
-        <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" media="screen">
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="js/ie-emulation-modes-warning.js"></script>
@@ -49,9 +48,7 @@
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
                                 <div class="dropdown">                        
                                     <a href="#" class="dropdown-toggle" type="button" id="Share" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Share" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="icon-mycomments fa-5x paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Share</span>
-                                        </i>
+                                        <button class="nlicon_notification"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
@@ -62,35 +59,29 @@
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                 <div class="dropdown">                        
                                     <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="icon-myengagements fa-5x paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
-                                        </i>
+                                        <button class="nlicon_ring"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Relevant</a></li>
+                                        <li><a href="#">Useful</a></li>
+                                        <li><a href="#">Comments</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                                <div class="dropdown paddingtop">                        
-                                    <a href="#" class="dropdown-toggle" type="button" id="Shareo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Share" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="fa fa-4x fa-share-square-o">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Share</span>
-                                        </i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                    </ul>
-                                </div>
+                                <a href="#" data-toggle="modal" data-target="#ShareModal">
+                                    <button class="nlicon_share"></button>
+                                </a>
+                            </div>
+                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">                                
+                                <a href="#" data-toggle="modal" data-target="#ArchiveModal">
+                                    <button class="nlicon_archive"></button>
+                                </a>             
                             </div>
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                 <div class="dropdown">                        
-                                    <a href="#" class="dropdown-toggle" type="button" id=" Archives" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title=" Archives" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="fa-4x icon-myarchive paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm">  Archives</span>
-                                        </i>
+                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                                        <button class="nlicon_selfee"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
@@ -101,9 +92,7 @@
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                 <div class="dropdown">                        
                                     <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="fa fa-4x fa-mobile">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
-                                        </i>
+                                        <button class="nlicon_read_book"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
@@ -114,9 +103,7 @@
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                 <div class="dropdown">                        
                                     <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="icon-mycomments fa-4x paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
-                                        </i>
+                                        <button class="nlicon_smile"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
@@ -127,9 +114,7 @@
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                 <div class="dropdown">                        
                                     <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="icon-mycomments fa-4x paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
-                                        </i>
+                                        <button class="nlicon_pencil"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
@@ -140,22 +125,7 @@
                             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                                 <div class="dropdown">                        
                                     <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="icon-mycomments fa-4x paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
-                                        </i>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                                <div class="dropdown">                        
-                                    <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <i class="icon-mycomments fa-4x paddinglr">
-                                            <span class="xsmall hidden-lg hidden-md hidden-sm"> Engagements</span>
-                                        </i>
+                                        <button class="nlicon_new_write"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="#">Action</a></li>
@@ -165,11 +135,15 @@
                             </div>                        
                         </div>                        
                     </div>    
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        Top right corner.....
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-left">                       
+                        <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                            <button class="nlicon_head"></button>
+                            Read Headlines of posts as Microblog
+                        </a>       
                     </div>
                 </div>
         </nav>
+        <div class="space-20"></div>
         <!-- Begin page content -->
         <div class="container-fluid">
             <div class="row">
@@ -229,37 +203,68 @@
                             <p>Posts from all categories mixed by default</p>
                             <div class="space-20"></div>                            
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more-action-bg">More Actions Arrived</div>
-                            <div class="space-10"></div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding center-block mCustomScrollbar _mCS_1 mCS-autoHide" id="contenttoreader" style="height: 340px; overflow: visible;">
-                                <div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" id="mCSB_1" tabindex="0">
-                                    <div dir="ltr" style="position: relative; top: 0px; left: 0px;" class="mCSB_container" id="mCSB_1_container">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
-                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
-                                            <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
-                                            <p>Father in jail For confiscating his daughter's iPhone</p>
-                                            <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  
-                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
-                                            <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
-                                            <p>Today is just another Thursday</p>
-                                            <a post_id="20" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  
-                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>If you want to be Creative,Then this is your "Golden Chance"</p><a post_id="149" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>রাষ্ট্রদ্রোহের মামলায় খালেদার সময়ের আবেদন মঞ্জুর</p><a post_id="300" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>জয় আসবেই</p><a post_id="334" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  
-                                            <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/3/Posting/d70c3b4c-b27b-4ac0-9a83-0392cb99b4d7.jpg"> <p>this is my new Post</p><a post_id="342" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a>
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>বেলি</p><a post_id="714" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">  <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> <p>স্বপ্ন </p><a post_id="715" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
-                                        </div> 
-                                    </div>
+                            <div class="space-10"></div><br /><br />
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding more_action_scroll">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
                                 </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg">
+                                    <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                    <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"> 
+                                    <p>Father in jail For confiscating his daughter's iPhone</p>
+                                    <a post_id="9" class="col-lg-12 text-pink addtoread text-right SaveOnReader" href=""> Select to save READ ON READER</a> 
+                                </div>                                
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center-block paddinglr">
                                 <br>
@@ -297,20 +302,125 @@
                             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
                                 <h4 style="color:red" class="panel-heading nomargin text-right">READER</h4>
                             </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mCustomScrollbar _mCS_2 mCS-autoHide" id="readersection" style="height: 590px; overflow: visible;"><div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" id="mCSB_2" tabindex="0"><div dir="ltr" style="position: relative; top: 0px; left: 0px;" class="mCSB_container" id="mCSB_2_container"><div post_id="794" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে .....</strong> <p> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে। ত্বক, চোখ ও চুলের যত্ন থেকে ক্যান্সারের মতো রোগ প্রতিরোধেও এই ফল রাখতে পারে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -359px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/7eede573-bf2f-44f6-9831-29015a97a845.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="836" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>সবাইকে বাংলা শুভ নববর্ষ 1423</strong> <p> তাপস নিঃশ্বাস বায়ে মুমূর্ষুরে উড়ায়ে  দিতে আর কয়েক ঘন্টা পরেই প্রভাতের অলোকচ্ছ টায় আবহমান এ বাংলার দিক-দিগন্ত উদ্ভাসিত করে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -271px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/f06ceb29-4d63-49f1-9397-94dcbd1c05b7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="717" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>চোখের লোনা জল </strong> <p> অনেক বেশী ভালোবাসি তোমায়।
-                                                শুধু তোমার জন্য,
-                                                আমি আর একবার হাসতে চাই,
-                                                আর একবার প্রানখুলে বাচতে চাই,
-                                                আর একবার নিশ্বাস ভরা বুকে বলতে চাই
-                                                ভালোবাসি!
-                                                ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -319px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/d5839a96-d9aa-4bda-a85e-f2e896f3bbc8.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="716" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>প্রিয় মুখ</strong> <p> হৃদয় আঙিনায় একদা দীপ জ্বালিয়েছিল যে মুখ তা আজ আর ভালো করে মনেও পড়ে না। সময় ক্রমাগত সব কিছু কেড়ে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -382px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/636a4e43-81a1-4e57-8989-99a9e51f02e7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="9" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Father in jail For confiscating his daughter's iPhone</strong> <p> "My client never committed a crime," Gray told Mashable. "He was just trying to be a father."    ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/a5ef7b8b-7c91-42f8-9517-793102017680.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="300" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>রাষ্ট্রদ্রোহের মামলায় খালেদার সময়ের আবেদন মঞ্জুর</strong> <p> মামলার বাদী মমতাজ উদ্দিন মেহেদীর আইনজীবীরা খালেদা জিয়ার বিরুদ্ধে গ্রেপ্তারি পরোয়ানা জারির আবেদন করেছেন। শুনানিতে খালেদা জিয়ার আইনজীবী সানাউল্লাহ মিয়া ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/12c90800-6955-452a-9a4d-d442e98ba16c.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="20" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Today is just another Thursday</strong> <p> Now i am going to tell you the real truth behind this outright cheating on the employment. I have to ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/ad4214ed-4b1c-4d29-a65b-07de5ad43e71.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="8" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Snow strom is no good to enjoy</strong> <p> Yap that is the immediate irony of few days of forced rests enjoying same noodles every time you wanna warm ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/80692d20-9bb3-4bed-9365-86a8213e2099.JPG"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="794" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে .....</strong> <p> আশ্চর্য্য সব ভেষজ গুন রয়েছে আমলকিতে। ত্বক, চোখ ও চুলের যত্ন থেকে ক্যান্সারের মতো রোগ প্রতিরোধেও এই ফল রাখতে পারে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -359px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/7eede573-bf2f-44f6-9831-29015a97a845.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="836" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>সবাইকে বাংলা শুভ নববর্ষ 1423</strong> <p> তাপস নিঃশ্বাস বায়ে মুমূর্ষুরে উড়ায়ে  দিতে আর কয়েক ঘন্টা পরেই প্রভাতের অলোকচ্ছ টায় আবহমান এ বাংলার দিক-দিগন্ত উদ্ভাসিত করে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -271px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/f06ceb29-4d63-49f1-9397-94dcbd1c05b7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="717" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>চোখের লোনা জল </strong> <p> অনেক বেশী ভালোবাসি তোমায়।
-                                                শুধু তোমার জন্য,
-                                                আমি আর একবার হাসতে চাই,
-                                                আর একবার প্রানখুলে বাচতে চাই,
-                                                আর একবার নিশ্বাস ভরা বুকে বলতে চাই
-                                                ভালোবাসি!
-                                                ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -319px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/d5839a96-d9aa-4bda-a85e-f2e896f3bbc8.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="716" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>প্রিয় মুখ</strong> <p> হৃদয় আঙিনায় একদা দীপ জ্বালিয়েছিল যে মুখ তা আজ আর ভালো করে মনেও পড়ে না। সময় ক্রমাগত সব কিছু কেড়ে ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="left: 0px; top: -382px;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/103/Posting/636a4e43-81a1-4e57-8989-99a9e51f02e7.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="9" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Father in jail For confiscating his daughter's iPhone</strong> <p> "My client never committed a crime," Gray told Mashable. "He was just trying to be a father."    ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/a5ef7b8b-7c91-42f8-9517-793102017680.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="300" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>রাষ্ট্রদ্রোহের মামলায় খালেদার সময়ের আবেদন মঞ্জুর</strong> <p> মামলার বাদী মমতাজ উদ্দিন মেহেদীর আইনজীবীরা খালেদা জিয়ার বিরুদ্ধে গ্রেপ্তারি পরোয়ানা জারির আবেদন করেছেন। শুনানিতে খালেদা জিয়ার আইনজীবী সানাউল্লাহ মিয়া ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/7/Posting/12c90800-6955-452a-9a4d-d442e98ba16c.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="20" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Today is just another Thursday</strong> <p> Now i am going to tell you the real truth behind this outright cheating on the employment. I have to ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/ad4214ed-4b1c-4d29-a65b-07de5ad43e71.jpg"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div><div post_id="8" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin paddingright marginright paddingtop"><strong>Snow strom is no good to enjoy</strong> <p> Yap that is the immediate irony of few days of forced rests enjoying same noodles every time you wanna warm ...</p> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div style="width: 100%; height: 50px;" class="croppie-result"> <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="/Images/5/Posting/80692d20-9bb3-4bed-9365-86a8213e2099.JPG"></div> </div> <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin"><div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left"><button class="btn btn-link text-pink">Relevant</button><button class="btn btn-link text-pink">Useful</button><button class="btn btn-link text-pink">Share</button><button class="btn btn-link text-pink">Archive</button><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Comment</button> </div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right"><button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink">Expand</button></div> </div> </div></div></div><div class="mCSB_scrollTools mCSB_2_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" id="mCSB_2_scrollbar_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div oncontextmenu="return false;" style="position: absolute; min-height: 50px; height: 148px; top: 0px; display: block; max-height: 556px;" class="mCSB_dragger" id="mCSB_2_dragger_vertical"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
-
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                                <div class="clicked_these_posts_scroll">
+                                    <!--News start-->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                        <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
+                                        <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                            <div style="width: 100%; height: 50px;" class="croppie-result"> 
+                                                <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Archive</button>
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Comment</button> 
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right">
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Expand</button>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <!--News End-->
+                                    <!--News start-->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                        <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
+                                        <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                            <div style="width: 100%; height: 50px;" class="croppie-result"> 
+                                                <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Archive</button>
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Comment</button> 
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right">
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Expand</button>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <!--News End-->
+                                    <!--News start-->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                        <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
+                                        <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                            <div style="width: 100%; height: 50px;" class="croppie-result"> 
+                                                <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Archive</button>
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Comment</button> 
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right">
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Expand</button>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <!--News End-->
+                                    <!--News start-->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                        <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
+                                        <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                            <div style="width: 100%; height: 50px;" class="croppie-result"> 
+                                                <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Archive</button>
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Comment</button> 
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right">
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Expand</button>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <!--News End-->
+                                    <!--News start-->
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                        <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
+                                        <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
+                                            <div style="width: 100%; height: 50px;" class="croppie-result"> 
+                                                <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
+                                            </div> 
+                                        </div> 
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
+                                                <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Archive</button>
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Comment</button> 
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right nopadding nomargin text-right">
+                                                <button data-target="#ExpandModal" data-toggle="modal" class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Expand</button>
+                                            </div> 
+                                        </div> 
+                                    </div>
+                                    <!--News End-->
+                                </div>                                
+                            </div>
                         </div>
                     </div>      
                     <div class="space-10"></div>
@@ -424,21 +534,50 @@
                     <div class="space-10"></div>
                     <p class="text-pink">Follow according to your objective</p>
                     <div class="space-10"></div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding center-block mCustomScrollbar _mCS_3 mCS-autoHide" id="followobjectively" style="height: 550px; overflow: visible;">
-                        <div class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" id="mCSB_3" tabindex="0">
-                            <div dir="ltr" style="position:relative; top:0; left:0;" class="mCSB_container" id="mCSB_3_container">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1/Cln0yOgAdb5JAXuCAHYbBa9dIO+kTVkk="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Vineet Kumar Tanwar</p><p> </p><p> Delhi, New Delhi, India</p></a>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1/uuSkLHTruXZYProxYn7KJ7G04E+329Q0="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Zaffar owais andrabi</p><p> </p><p> srinagar, jk, India</p></a></div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1+kjl2kORH6pLidPimyDutA4SltogVuixo="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Divya Kumar Gupta</p><p> GBSSSS</p><p> Rohini, New Delhi, India</p></a></div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1/AIjByMPNy28FptcUVhmY4Rt+E2H/yDXw="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>HASHIM ABBAS JANAI</p><p> </p><p> Madhapur, Telangana, India</p></a></div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX18rwYFp5m55Ls1MDUqF28oUzoIcRal3/Go="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>SUBRATA KUMAR SEN</p><p> </p><p> Bangladesh</p></a></div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX19u0VhHEydFiCof6B1YGHlIT/WBQGUfbZY="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>MD. ANOWARUL ISLAM</p><p> </p><p> BADDA, DHAKA, Bangladesh</p></a></div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX1+BcSBcrYNdjuIlXzOsebBC94bSOgytvlE="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Riazul Islam Rejon</p><p> </p><p> Nikunja-2, Dhaka, Bangladesh</p></a></div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg"><a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a><a href="/DashBoard/browseprofile?val=U2FsdGVkX18cqSlKJytCz0Lm3e/dNXj4+UIqzsO35Mo="><img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive img-rounded pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/news_demo.png"><p>Nusrat Noshin Nova</p><p> </p><p> Dhaka, Dhaka, Bangladesh</p></a></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                        <div class="more_action_scroll">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
                             </div>
-                        </div>
-                        <div class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" id="mCSB_3_scrollbar_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div oncontextmenu="return false;" style="position: absolute; min-height: 50px; height: 368px; top: 0px; display: block; max-height: 516px;" class="mCSB_dragger" id="mCSB_3_dragger_vertical"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtb paddinglr margintop marginbottom magentabg" style="width: 100%;">
+                                <a class="toprightcorner" href="#"><i class="fa fa-times-circle"></i></a>
+                                <img style="height:72px; width:72px; margin-right:6px;" class="nopadding img-responsive pull-left mCS_img_loaded" onerror="this.src = 'img/bg/M.Hashemi.JPG'" src="img/bg/add_july.png"> 
+                                <p>July Rodrigez<br />Cyclist<br />Atlanta, USA</p> 
+                            </div>
+                        </div>                                                                               
+                    </div>
                     <div class="space-10"></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="checkbox text-left">
@@ -472,7 +611,9 @@
                             </label>
                         </div>                        
                     </div>
-                    <img class="img-responsive" src="img/bg/Add.png">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img class="img-responsive" src="img/bg/Add.png">
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -480,11 +621,11 @@
         <footer class="footer">
             <div class="container-fluid">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block nopadding">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 center-block nopadding">
                         <div class="space-10"></div>
                         <p class="copyrights">Copyrights &copy; Newslets Inc. 2015-16</p>                       
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block ">
+                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 center-block ">
                         <div class="space-10"></div>
                         <p>Be A Better User</p>
                     </div>
@@ -508,13 +649,384 @@
                 </div>
             </div>
         </footer>
-        <!-- jQuery --> 
-        <script src="js/jquery-2.1.0.min.js"></script> 
-        <!-- Bootstrap JavaScript --> 
-        <script src="js/bootstrap.min.js"></script> 
-        <script src="js/ie10-viewport-bug-workaround.js"></script> 
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="js/jquery.mCustomScrollbar.concat.js"></script>
+        <!-- Archive modal -->
+        <div class="modal fade" id="ArchiveModal" tabindex="-1" role="dialog" aria-labelledby="ArchiveModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">  
+                    <div class="modal-body">
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Others archived your Posts </td> 
+                                    <td>Qty</td> 
+                                    <td>Points</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <br />
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>You Archived others' Posts</td> 
+                                    <td>Date</td> 
+                                    <td>Time</td> 
+                                    <td>Points</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr>
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- Share modal -->
+            <div class="modal fade" id="ShareModal" tabindex="-1" role="dialog" aria-labelledby="ShareModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">  
+                        <div class="modal-body">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr style="background-color: #D5D362;"> 
+                                        <td>Share received on your Posts</td> 
+                                        <td>Quantity</td> 
+                                        <td>Points earned</td> 
+                                    </tr> 
+                                </tbody>
+                            </table>                            
+                            <div class="modal_scroll">
+                                <table class="table"> 
+                                    <tbody> 
+                                        <tr class="info"> 
+                                            <td>Why I am confused ?</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr>                                    
+                                        <tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Smartphone relations</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr> 
+                                        <tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Obama went to Mosque</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>The color of White House</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Why I am confused ?</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Cloud Nine</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Smartphone relations</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Obama went to Mosque</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>The color of White House</td> 
+                                            <td class="text-danger">10</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr>
+                                    </tbody> 
+                                </table>
+                            </div>
+                            <br />
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr style="background-color: #D5D362;"> 
+                                        <td>Share given by you on others’ Posts</td> 
+                                        <td>Date</td> 
+                                        <td>Time</td> 
+                                        <td>Points</td> 
+                                    </tr> 
+                                </tbody>
+                            </table>                            
+                            <div class="modal_scroll">
+                                <table class="table"> 
+                                    <tbody> 
+                                        <tr class="info"> 
+                                            <td>Why I am confused ?</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td>
+                                            <td class="text-danger">50</td> 
+                                        </tr>                                    
+                                        <tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Smartphone relations</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td>
+                                            <td class="text-danger">50</td> 
+                                        </tr> 
+                                        <tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Obama went to Mosque</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr>
+                                        <tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>The color of White House</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Why I am confused ?</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td>
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Cloud Nine</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Smartphone relations</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td> 
+                                            <td class="text-danger">50</td> 
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>Obama went to Mosque</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td> 
+                                            <td class="text-danger">50</td>
+                                        </tr><tr class="td-small-height"> 
+                                            <td colspan="3">&nbsp;</td> 
+                                        </tr> 
+                                        <tr class="info"> 
+                                            <td>The color of White House</td> 
+                                            <td>Jan 30 2016</td> 
+                                            <td>6:51 am</td>
+                                            <td class="text-danger">50</td> 
+                                        </tr>
+                                    </tbody> 
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- jQuery --> 
+            <script src="js/jquery-2.1.0.min.js"></script> 
+            <!-- Bootstrap JavaScript --> 
+            <script src="js/bootstrap.min.js"></script> 
+            <script src="js/ie10-viewport-bug-workaround.js"></script> 
+            <script src="js/jquery.slimscroll.js"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $('.more_action_scroll').slimScroll({
+                        height: '450px',
+                        alwaysVisible: true,
+                        opacity: 0.2,
+                    });
+                    $('.clicked_these_posts_scroll').slimScroll({
+                        height: '680px',
+                        alwaysVisible: true,
+                        opacity: 0.2,
+                    });
+                    $('.modal_scroll').slimScroll({
+                        height: '350px',
+                        alwaysVisible: true,
+                        opacity: 0.2,
+                    });
+                });
+            </script>
     </body>
 </html>
