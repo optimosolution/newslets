@@ -36,7 +36,6 @@
               <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
-        <script src="js/custom.js"></script>
     </head>
     <body>
         <!-- Fixed navbar navbar-fixed-top-->
@@ -62,9 +61,9 @@
                                         <button class="nlicon_ring"></button>
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Relevant</a></li>
-                                        <li><a href="#">Useful</a></li>
-                                        <li><a href="#">Comments</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#RelevantModal">Relevant</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#UsefulModal">Useful</a></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#CommentsModal">Comments</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -147,7 +146,7 @@
         <!-- Begin page content -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
                             <h4>User Anonymous</h4>
@@ -155,11 +154,11 @@
                             <div class="space-40"></div>
                             <h5 class="text-pink">u@sabbir/visualizer/dhaka</h5>
                             <div class="space-20"></div>
-                            <a href="#"><i class="fa fa-5x fa-gear"></i></a>
+                            <a href="#" style="color:#666;"><i class="fa fa-5x fa-gear"></i></a>
                             <div class="space-20"></div>
                             <a href="#"><img class="img-responsive center-block" src="img/bg/newslets_logo_ua.png"></a>
                             <div class="space-50"></div>
-                            <h4 class="text-pink text-left">Follow Objectively</h4>
+                            <h5 class="text-pink text-left">Follow Objectively</h5>
                             <div class="space-20"></div>
                             <p class="text-muted text-left">Select to view</p>
                             <div class="checkbox text-left">
@@ -305,16 +304,16 @@
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
                                 <div class="clicked_these_posts_scroll">
                                     <!--News start-->
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
                                         <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
                                             <div style="width: 100%; height: 50px;" class="croppie-result"> 
                                                 <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
                                             </div> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
-                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop space-10">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left" style="display: none;">
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
@@ -328,16 +327,16 @@
                                     </div>
                                     <!--News End-->
                                     <!--News start-->
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
                                         <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
                                             <div style="width: 100%; height: 50px;" class="croppie-result"> 
                                                 <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
                                             </div> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
-                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop space-10">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left" style="display: none;">
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
@@ -351,16 +350,16 @@
                                     </div>
                                     <!--News End-->
                                     <!--News start-->
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
                                         <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
                                             <div style="width: 100%; height: 50px;" class="croppie-result"> 
                                                 <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
                                             </div> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
-                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop space-10">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left" style="display: none;">
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
@@ -374,16 +373,16 @@
                                     </div>
                                     <!--News End-->
                                     <!--News start-->
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
                                         <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
                                             <div style="width: 100%; height: 50px;" class="croppie-result"> 
                                                 <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
                                             </div> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
-                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop space-10">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left" style="display: none;">
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
@@ -397,16 +396,16 @@
                                     </div>
                                     <!--News End-->
                                     <!--News start-->
-                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                         <strong>Aenean eget feugiat elit. Ut eget tincidunt ligula</strong> 
                                         <p>Aenean eget feugiat elit. Ut eget tincidunt ligula. Donec non libero eget lacus rhoncus euismod. Fusce ac vestibulum nisl. Aliquam imperdiet magna vitae nunc posuere, sit amet semper quam cursus. Donec placerat, nulla sed pharetra lacinia, urna lacus interdum sapien, in tempor quam nibh quis lectus    ...</p> 
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding nomargin">
                                             <div style="width: 100%; height: 50px;" class="croppie-result"> 
                                                 <img class="img-responsive mCS_img_loaded" style="top: -0px;left: -opx;" onerror="this.src = '/img/bg/M.Hashemi.JPG'" src="img/bg/add_middle.png">
                                             </div> 
-                                        </div> 
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
-                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left">
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop space-10">
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 pull-left nopadding nomargin text-left" style="display: none;">
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Relevant</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Useful</button>
                                                 <button class="btn btn-link text-pink" style="color:#E12526;text-decoration: none;">Share</button>
@@ -445,10 +444,10 @@
                         <div class="text-analytics-content">Edited <span class="text-danger">09</span> Deleted <span class="text-danger">13</span></div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
                             <p>Followed by <span class="text-danger">1149</span> <a href="#">View</a> Unfollowed by <span class="text-danger">137</span> since 1st Thinklets.</p>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 more-action-bg text-left">
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 more-action-bg text-left">
                             <p>Result From your total of <span class="text-danger">92</span> Newslets/Thoughtlets <span class="text-muted">as of last posting</span></p>
                         </div>
                     </div>
@@ -522,7 +521,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 borderleft">
+                <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 borderleft">
                     <div class="input-group">
                         <input type="text" placeholder="Search by name of User by category" class="form-control">
                         <div class="input-group-btn">
@@ -532,7 +531,7 @@
                         </div>
                     </div>  
                     <div class="space-10"></div>
-                    <p class="text-pink">Follow according to your objective</p>
+                    <p class="text-left">Follow Objectively</p>
                     <div class="space-10"></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
                         <div class="more_action_scroll">
@@ -652,7 +651,10 @@
         <!-- Archive modal -->
         <div class="modal fade" id="ArchiveModal" tabindex="-1" role="dialog" aria-labelledby="ArchiveModalLabel">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">  
+                <div class="modal-content"> 
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
                     <div class="modal-body">
                         <table class="table"> 
                             <tbody> 
@@ -825,208 +827,751 @@
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <!-- Share modal -->
-            <div class="modal fade" id="ShareModal" tabindex="-1" role="dialog" aria-labelledby="ShareModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">  
-                        <div class="modal-body">
+        </div>
+        <!-- Share modal -->
+        <div class="modal fade" id="ShareModal" tabindex="-1" role="dialog" aria-labelledby="ShareModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">  
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Share received on your Posts</td> 
+                                    <td>Quantity</td> 
+                                    <td>Points earned</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
                             <table class="table"> 
                                 <tbody> 
-                                    <tr style="background-color: #D5D362;"> 
-                                        <td>Share received on your Posts</td> 
-                                        <td>Quantity</td> 
-                                        <td>Points earned</td> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
                                     </tr> 
-                                </tbody>
-                            </table>                            
-                            <div class="modal_scroll">
-                                <table class="table"> 
-                                    <tbody> 
-                                        <tr class="info"> 
-                                            <td>Why I am confused ?</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr>                                    
-                                        <tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Smartphone relations</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr> 
-                                        <tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Obama went to Mosque</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>The color of White House</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Why I am confused ?</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Cloud Nine</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Smartphone relations</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Obama went to Mosque</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>The color of White House</td> 
-                                            <td class="text-danger">10</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr>
-                                    </tbody> 
-                                </table>
-                            </div>
-                            <br />
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <br />
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Share given by you on others’ Posts</td> 
+                                    <td>Date</td> 
+                                    <td>Time</td> 
+                                    <td>Points</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
                             <table class="table"> 
                                 <tbody> 
-                                    <tr style="background-color: #D5D362;"> 
-                                        <td>Share given by you on others’ Posts</td> 
-                                        <td>Date</td> 
-                                        <td>Time</td> 
-                                        <td>Points</td> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
                                     </tr> 
-                                </tbody>
-                            </table>                            
-                            <div class="modal_scroll">
-                                <table class="table"> 
-                                    <tbody> 
-                                        <tr class="info"> 
-                                            <td>Why I am confused ?</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td>
-                                            <td class="text-danger">50</td> 
-                                        </tr>                                    
-                                        <tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Smartphone relations</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td>
-                                            <td class="text-danger">50</td> 
-                                        </tr> 
-                                        <tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Obama went to Mosque</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr>
-                                        <tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>The color of White House</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Why I am confused ?</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td>
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Cloud Nine</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Smartphone relations</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td> 
-                                            <td class="text-danger">50</td> 
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>Obama went to Mosque</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td> 
-                                            <td class="text-danger">50</td>
-                                        </tr><tr class="td-small-height"> 
-                                            <td colspan="3">&nbsp;</td> 
-                                        </tr> 
-                                        <tr class="info"> 
-                                            <td>The color of White House</td> 
-                                            <td>Jan 30 2016</td> 
-                                            <td>6:51 am</td>
-                                            <td class="text-danger">50</td> 
-                                        </tr>
-                                    </tbody> 
-                                </table>
-                            </div>
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr>
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- jQuery --> 
-            <script src="js/jquery-2.1.0.min.js"></script> 
-            <!-- Bootstrap JavaScript --> 
-            <script src="js/bootstrap.min.js"></script> 
-            <script src="js/ie10-viewport-bug-workaround.js"></script> 
-            <script src="js/jquery.slimscroll.js"></script>
-            <script type="text/javascript">
-                $(function () {
-                    $('.more_action_scroll').slimScroll({
-                        height: '450px',
-                        alwaysVisible: true,
-                        opacity: 0.2,
-                    });
-                    $('.clicked_these_posts_scroll').slimScroll({
-                        height: '680px',
-                        alwaysVisible: true,
-                        opacity: 0.2,
-                    });
-                    $('.modal_scroll').slimScroll({
-                        height: '350px',
-                        alwaysVisible: true,
-                        opacity: 0.2,
-                    });
+        </div>
+        <!-- Relevant modal -->
+        <div class="modal fade" id="RelevantModal" tabindex="-1" role="dialog" aria-labelledby="RelevantModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">  
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Relevant received on your Posts</td> 
+                                    <td>Quantity</td> 
+                                    <td>Points earned</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <br />
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Relevant given by you on others’ Posts</td> 
+                                    <td>Date</td> 
+                                    <td>Time</td> 
+                                    <td>Points</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr>
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Useful modal -->
+        <div class="modal fade" id="UsefulModal" tabindex="-1" role="dialog" aria-labelledby="UsefulModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">  
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Useful received on your Posts</td> 
+                                    <td>Quantity</td> 
+                                    <td>Points earned</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <br />
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Useful given by you on others’ Posts</td> 
+                                    <td>Date</td> 
+                                    <td>Time</td> 
+                                    <td>Points</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr>
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Useful modal -->
+        <div class="modal fade" id="CommentsModal" tabindex="-1" role="dialog" aria-labelledby="CommentsModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">  
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Comments made by others on your Posts</td> 
+                                    <td>Quantity</td> 
+                                    <td>Points earned</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td class="text-danger">10</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                        <br />
+                        <table class="table"> 
+                            <tbody> 
+                                <tr style="background-color: #D5D362;"> 
+                                    <td>Comments written by you on others' Posts</td> 
+                                    <td>Date</td> 
+                                    <td>Time</td> 
+                                    <td>Points</td> 
+                                </tr> 
+                            </tbody>
+                        </table>                            
+                        <div class="modal_scroll">
+                            <table class="table"> 
+                                <tbody> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>                                    
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr> 
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr>
+                                    <tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Why I am confused ?</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Cloud Nine</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Smartphone relations</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td> 
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>Obama went to Mosque</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td> 
+                                        <td class="text-danger">50</td>
+                                    </tr><tr class="td-small-height"> 
+                                        <td colspan="3">&nbsp;</td> 
+                                    </tr> 
+                                    <tr class="info"> 
+                                        <td>The color of White House</td> 
+                                        <td>Jan 30 2016</td> 
+                                        <td>6:51 am</td>
+                                        <td class="text-danger">50</td> 
+                                    </tr>
+                                </tbody> 
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery --> 
+        <script src="js/jquery-2.1.0.min.js"></script> 
+        <!-- Bootstrap JavaScript --> 
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/ie10-viewport-bug-workaround.js"></script> 
+        <script src="js/jquery.slimscroll.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('.more_action_scroll').slimScroll({
+                    height: '450px',
+                    alwaysVisible: true,
+                    opacity: 0.2,
                 });
-            </script>
+                $('.clicked_these_posts_scroll').slimScroll({
+                    height: '680px',
+                    alwaysVisible: true,
+                    opacity: 0.2,
+                });
+                $('.modal_scroll').slimScroll({
+                    height: '200px',
+                    alwaysVisible: true,
+                    opacity: 0.2,
+                });
+            });
+        </script>
     </body>
 </html>

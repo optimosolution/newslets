@@ -458,6 +458,9 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     text-align: center;
 }
 .td-small-height{
+    clear: both;
+    padding: 0px;
+    margin: 0px;
     height: 10px;
     font-size:0px;
 }
