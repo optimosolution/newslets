@@ -45,15 +45,9 @@
                     <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                         <div class="row">
                             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 text-center">
-                                <div class="dropdown">                        
-                                    <a href="#" class="dropdown-toggle" type="button" id="Share" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Share" title="" data-placement="bottom" data-toggle="tooltip">
-                                        <button class="nlicon_notification"></button>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                    </ul>
-                                </div>
+                                <a href="#" data-toggle="modal" data-target="#ActivitiesModal">
+                                    <button class="nlicon_notification"></button>
+                                </a>
                             </div>
                             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
@@ -89,49 +83,25 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                                    <div class="dropdown">                        
-                                        <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                            <button class="nlicon_read_book"></button>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                        </ul>
-                                    </div>
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">                                    
+                                    <a href="#" data-toggle="modal" data-target="#FollowingNewsletsModal">
+                                        <button class="nlicon_read_book"></button>
+                                    </a>
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                                    <div class="dropdown">                        
-                                        <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                            <button class="nlicon_smile"></button>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#FollowingMessagesModal">
+                                        <button class="nlicon_smile"></button>
+                                    </a>
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                                    <div class="dropdown">                        
-                                        <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                            <button class="nlicon_pencil"></button>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#FollowingNotesModal">
+                                        <button class="nlicon_pencil"></button>
+                                    </a>     
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                                    <div class="dropdown">                        
-                                        <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                            <button class="nlicon_new_write"></button>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#FollowingContentsModal">
+                                        <button class="nlicon_new_write"></button>
+                                    </a>           
                                 </div> 
                             </div>                                                   
                         </div>                        
@@ -1543,6 +1513,476 @@
                 </div>
             </div>
         </div>
+        <!-- Activities of your Following/Followers on your Posts - modal -->
+        <div class="modal fade" id="ActivitiesModal" tabindex="-1" role="dialog" aria-labelledby="ActivitiesModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <p>Activities of your Following/Followers on your Posts</p>
+                    <div class="modal_single_scroll">
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Following Newslets are #Trending at the moment - modal -->
+        <div class="modal fade" id="FollowingNewsletsModal" tabindex="-1" role="dialog" aria-labelledby="FollowingNewsletsModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <p>Following Newslets are #Trending at the moment</p>
+                    <div class="modal_single_scroll">
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the News</p> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Following Messages are #Trending at the moment - modal -->
+        <div class="modal fade" id="FollowingMessagesModal" tabindex="-1" role="dialog" aria-labelledby="FollowingMessagesModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <p>Following Messages are #Trending at the moment</p>
+                    <div class="modal_single_scroll">
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Messages</p> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Following Notes are #Trending at the moment - modal -->
+        <div class="modal fade" id="FollowingNotesModal" tabindex="-1" role="dialog" aria-labelledby="FollowingNotesModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <p>Following Notes are #Trending at the moment</p>
+                    <div class="modal_single_scroll">
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Notes</p> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Following Contents are #Trending at the moment - modal -->
+        <div class="modal fade" id="FollowingContentsModal" tabindex="-1" role="dialog" aria-labelledby="FollowingContentsModalLabel">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <p>Following Contents are #Trending at the moment</p>
+                    <div class="modal_single_scroll">
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3:40pm</span></p>                        
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                <p>Headline of the Contents</p> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EXPAND - modal -->            
+        <div class="modal fade" id="ExpandModal" tabindex="-1" role="dialog" aria-labelledby="ExpandModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:1030px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="modal_left_scroll">
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada justo mattis scelerisque mattis. Duis pretium ex enim, non rhoncus mauris rhoncus ut. Phasellus vulputate diam in elit aliquet, vel scelerisque erat fringilla. Fusce a rutrum est, sit amet imperdiet elit. Pellentesque ut nisl rhoncus, ullamcorper orci eu, tristique elit. Curabitur finibus ultrices lorem</p>                                
+                                <img class="img-responsive img-thumbnail" src="img/bg/expand_demo.jpg"> 
+                                <p class="text-justify">Duis dapibus lorem eleifend neque viverra, sit amet fermentum dui ultrices. Pellentesque imperdiet posuere gravida. Vestibulum sem augue, mollis sed fringilla non, semper a nisi. Quisque fermentum, dui eget consectetur tincidunt, diam est maximus nunc, ac lobortis lectus turpis eget risus. </p>
+                                <p class="hr-bar">&nbsp;</p>
+                                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                    <p class="text-muted">This post received such engagements</p>
+                                    <p class="text-color-firoza">Relevent 7 Usefull 3 Share 5 Archive 0 Comment 5</p>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                    <p class="text-muted">How do you like this post? Select</p>
+                                    <p class="text-danger">Relevent Usefull Share Archive</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-6">
+                                    <img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png">                                                                
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-6 col-xs-6 nopadding">
+                                    <h2 class="text-color-firoza">Mr. John McQueen</h2>
+                                    <p class="small">April 01 2016 02:42AM</p>
+                                </div> 
+                            </div>
+                            <p class="hr-bar"></p>
+                            <p class="text-right text-danger">Show previous comments</p>
+                            <div class="modal_right_scroll">
+                                <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive pull-left" src="img/bg/add_july.png"> 
+                                        <h2 class="text-color-firoza">July Rodrigez</h2>
+                                        <p class="small">April 01 2016 02:42AM</p>
+                                        <p>Pellentesque ipsum nisi, egestas vel mattis a, imperdiet id felis. Proin quis rutrum risus <span class="pull-right text-danger">Show More</span></p>                                         
+                                    </div>
+                                </div>
+                                <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive pull-left" src="img/bg/add_july.png"> 
+                                        <h2 class="text-color-firoza">July Rodrigez</h2>
+                                        <p class="small">April 01 2016 02:42AM</p>
+                                        <p>Pellentesque ipsum nisi, egestas vel mattis a, imperdiet id felis. Proin quis rutrum risus <span class="pull-right text-danger">Show More</span></p>                                         
+                                    </div>
+                                </div>
+                                <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive pull-left" src="img/bg/add_july.png"> 
+                                        <h2 class="text-color-firoza">July Rodrigez</h2>
+                                        <p class="small">April 01 2016 02:42AM</p>
+                                        <p>Pellentesque ipsum nisi, egestas vel mattis a, imperdiet id felis. Proin quis rutrum risus <span class="pull-right text-danger">Show More</span></p>                                         
+                                    </div>
+                                </div>
+                                <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive pull-left" src="img/bg/add_july.png"> 
+                                        <h2 class="text-color-firoza">July Rodrigez</h2>
+                                        <p class="small">April 01 2016 02:42AM</p>
+                                        <p>Pellentesque ipsum nisi, egestas vel mattis a, imperdiet id felis. Proin quis rutrum risus <span class="pull-right text-danger">Show More</span></p>                                         
+                                    </div>
+                                </div>
+                                <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive pull-left" src="img/bg/add_july.png"> 
+                                        <h2 class="text-color-firoza">July Rodrigez</h2>
+                                        <p class="small">April 01 2016 02:42AM</p>
+                                        <p>Pellentesque ipsum nisi, egestas vel mattis a, imperdiet id felis. Proin quis rutrum risus <span class="pull-right text-danger">Show More</span></p>                                         
+                                    </div>
+                                </div>
+                            </div>                            
+                            <form class="space-10">
+                                <textarea class="form-control" rows="2" placeholder="Write your comment here. Good comment is an unique 'content marketing'"></textarea>
+                                <button class="btn btn-xs pull-right" style="position:relative;top:-22px;">Post</button>
+                            </form>
+                            <img class="img-responsive" src="img/bg/Add2.png"> 
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
         <!-- jQuery --> 
         <script src="js/jquery-2.1.0.min.js"></script> 
         <!-- Bootstrap JavaScript --> 
@@ -1571,6 +2011,24 @@
                 });
                 $('.modal_scroll').slimScroll({
                     height: '200px',
+                    alwaysVisible: true,
+                    opacity: 0.2,
+                    size: '10px'
+                });
+                $('.modal_left_scroll').slimScroll({
+                    height: '680px',
+                    alwaysVisible: true,
+                    opacity: 0.2,
+                    size: '10px'
+                });
+                $('.modal_right_scroll').slimScroll({
+                    height: '300px',
+                    alwaysVisible: true,
+                    opacity: 0.2,
+                    size: '10px'
+                });
+                $('.modal_single_scroll').slimScroll({
+                    height: '550px',
                     alwaysVisible: true,
                     opacity: 0.2,
                     size: '10px'
