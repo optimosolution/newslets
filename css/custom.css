@@ -437,6 +437,12 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
 .text-custom-merun{
     color: #303382;
 }
+.text-custom-ash{
+    color: #888;
+}
+.expand-height{
+    height: 20px;
+}
 .more-action-bg{
     text-align: center;
     padding: 5px;
@@ -449,12 +455,12 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     color: #999;
 }
 .text-analytics-header{
-    background-color: #F69C7A;
+    background-color: #6CCFF6;
     color: #FFF;
     text-align: center;
 }
 .text-analytics-content{
-    background-color: #F5AB7A;
+    background-color: #AAE0FA;
     text-align: center;
 }
 .td-small-height{
@@ -463,6 +469,9 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     margin: 0px;
     height: 10px;
     font-size:0px;
+}
+.btn-signin-pad{
+    margin-right: 21px;
 }
 .nlicon_notification{
     background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left 5px;
