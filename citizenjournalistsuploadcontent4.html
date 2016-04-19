@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
     <head>
-        <title>NewsLets | Users Upload Thoughtlets</title>
+        <title>NewsLets | Citizen journalist Upload Newslets</title>
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -23,7 +23,6 @@
         <meta name=viewport content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CSS -->
-        <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <!--<link href="css/b3.css" rel="stylesheet" media="screen">-->
         <link href="css/custom.css" rel="stylesheet" media="screen">
@@ -37,7 +36,7 @@
               <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
             <![endif]-->
     </head>
-    <body class="yousersbodyblue">
+    <body class="citizenjournalistsbodyyellow">
         <!-- Fixed navbar -->
         <nav class="navbar navbar-default nomargin2" role="navigation">
             <div class="container">
@@ -46,8 +45,7 @@
                     <a class="navbar-brand active" href="index.html"><img src="img/bg/Newslets_Logo_icon-02.png" class="img-responsive center-block"></a> </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="mainpagestext"><a class="small">Quality of posts and headlines increase Followers organically</a></li>
-
+                        <li class="mainpagestext"><a class="small">To inform the world, write Newslets.</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse --> 
@@ -56,56 +54,71 @@
         <div class="container">
             <div class="row space-50">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-                    <h3 class="nomargin paddingtop text-success center-block text-center"><strong class="center-block">Form to upload Thoughtlets by User Anonymous</strong></h3>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-push-1 nopadding"> 
-                        <h4 class="margintopmenu"><span class="label label-success">150 Words</span></h4>
-                        <form>
-                            <div class="form-group">
+                    <h3 class="nomargin paddingtop text-success center-block text-center"><strong class="center-block">Form to upload Newslet for Social Journalist</strong></h3>
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-push-1 nopadding">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"  style="background-color: #FFF;height:150px;">
+                            <a class="btn bg-primary txt-color-white" href="javascript:void(0);" style="margin-top: 20px;"><i class="fa fa-arrow-down fa-4x"></i></a>
+                            <h4 class="text-success">Upload a visual</h4>
+                        </div>
+                        <form style="margin-top:180px;">
+                            <div class="clearfix form-group">
                                 <label for="">Write Headline</label>
                                 <input type="text" class="form-control" id="" placeholder="99 Characters">
                             </div>
+                            <div class="space-10"></div>
+                            <img class="img-responsive" style="width:60%;" src="img/bg/editor1.png">
+                            <div class="space-30"></div>
                             <div class="form-group">
-                                <label for="" class="fontnormal">Write this paragraph within 40 words</label>
-                                <textarea class="form-control" placeholder="40 Words" rows="5"></textarea>
+                                <label for="" class="fontnormal">This is an open format for you to write as you wish.</label>
+                                <textarea class="form-control" placeholder="1000 Words" rows="10"></textarea>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"  style="background-color: #FFF;height:150px;">
+                                    <a class="btn bg-primary txt-color-white" href="javascript:void(0);" style="margin-top: 20px;"><i class="fa fa-arrow-down fa-4x"></i></a>
+                                    <h4 class="text-success">Upload another visual</h4>
+                                </div>
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>      
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                Select appropriate Tag for your News
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputFile">Upload a visual <em class="fontnormal">/ you may</em></label>
-                                <input type="file" id="exampleInputFile1" class="filestyle" data-iconName="glyphicon glyphicon-circle-arrow-up" data-buttonName="btn-success" data-buttonText="Upload a visual ">
-
+                            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                                <div class="form-group">
+                                <select class="form-control">
+                                    <option> Social crime/violence by people</option>
+                                    <option>Corruption under Employment</option>
+                                    <option>Local Political/Democracy News</option>
+                                    <option>Local Economic News</option>
+                                    <option>Local Social News</option>
+                                    <option>Cultural/Traditional News</option>
+                                    <option>Developmental- Local Govt.News</option>
+                                    <option>Developmental- Local Commerce/Industry News</option>
+                                    <option>Developmental- Local Empowerment News</option>
+                                    <option>Local Technology/Innovation News</option>
+                                    <option>Local Agricultural News</option>
+                                    <option>Local Livestock News</option>
+                                    <option>Local Nature/Climate News</option>
+                                    <option>Local Services to People</option>
+                                    <option>Educational News</option>
+                                    <option>Local Sports News</option>
+                                </select>
                             </div>
-                            <div class="form-group">
-                                <label for="" class="fontnormal">Write this paragraph within 60 words</label>
-                                <textarea class="form-control" placeholder="60 Words" rows="6"></textarea>
                             </div>
+                            
                             <div class="form-group">
-                                <label for="" class="fontnormal">Write this paragraph within 30 words</label>
-                                <textarea class="form-control" placeholder="30 Words" rows="4"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputFile">Upload another visual <em class="fontnormal">/ you may</em></label>
-                                <input type="file" id="exampleInputFile" class="filestyle" data-iconName="glyphicon glyphicon-circle-arrow-up" data-buttonName="btn-success" data-buttonText="Upload another visual">
-                            </div>
-                            <div class="form-group">
-                                <label for="" class="fontnormal">Write this paragraph within 20 words</label>
-                                <textarea class="form-control" placeholder="20 Words" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="">PREVIEW YOUR THOUGHTLETS FOR EDITING Click on </label>
+                                <label for="">PREVIEW YOUR NEWSLET FOR EDITING Click on </label>
                                 <a id="" class="btn btn-link" data-target="#ThoughtletsModal" data-toggle="modal">| Preview |</a> </div>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                                 <div class="form-group">
                                     <a id="" class="btn btn-primary">Go Share</a> 
                                 </div>
                             </div>
-                            <p class="help-block text-center">this post with my friends and close contacts</p>
-
+                            <p class="help-block text-center">this content with my friends and close contacts</p>
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                                 <input type="submit" class="btn btn-primary" value="Publish">
                             </div>
-                            <p class="help-block">All of your Following and all of your Followers will receive your post. Platform will send 
+                            <p class="help-block">All of your Following and all of your Followers will receive your content. Platform will send 
                                 it over and over again until last Following/Followers clicks on to save and read. Headline 
-                                of this post will be sent to universal stream. Anyone clicks on the headline, will be given 
-                                whole post. So expect lots of followers post by post.</p>
+                                of this newslet will be sent to universal stream. Anyone clicks on the headline, will be given 
+                                whole post. So expect lots of followers newslet by newslet.</p>
                         </form>
                         <div class="space-50"></div>
                     </div>
@@ -117,8 +130,10 @@
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block ">
+                            <br/>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 center-block ">
+                            <br/>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-right">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding paddingtop pull-right">

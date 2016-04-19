@@ -172,7 +172,11 @@ p.small {
 }
 .nomargin {
     margin: 0 !important;
-    height: 71px; /*64px*/
+    height: 64px;
+}
+.nomargin2 {
+    margin: 0 !important;
+    height: 71px;
 }
 .nomarginbottom,.nomarginb{margin-bottom:0px !important;}
 .nomargintop,.nomargint{margin-top:0px !important;}
