@@ -172,7 +172,7 @@ p.small {
 }
 .nomargin {
     margin: 0 !important;
-    height: 64px;
+    height: 71px; /*64px*/
 }
 .nomarginbottom,.nomarginb{margin-bottom:0px !important;}
 .nomargintop,.nomargint{margin-top:0px !important;}
@@ -484,7 +484,7 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     font-size:11px;
 }
 .under-scroll-text{
-    padding-right: 12px;
+    padding-right: 20px;
 }
 .nlicon_notification{
     background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left 5px;
