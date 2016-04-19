@@ -480,6 +480,12 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
 .hr-bar{
     border-bottom: 1px solid #666;
 }
+.modal-date{
+    font-size:11px;
+}
+.under-scroll-text{
+    padding-right: 12px;
+}
 .nlicon_notification{
     background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left 5px;
     height: 65px;
