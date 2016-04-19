@@ -73,15 +73,9 @@
                                     </a>             
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">
-                                    <div class="dropdown">                        
-                                        <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                            <button class="nlicon_selfee"></button>
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                            <li><a href="#">Action</a></li>
-                                            <li><a href="#">Another action</a></li>
-                                        </ul>
-                                    </div>
+                                    <a href="#" data-toggle="modal" data-target="#SnapaStoryModal">
+                                        <button class="nlicon_selfee"></button>
+                                    </a>
                                 </div>
                                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1">                                    
                                     <a href="#" data-toggle="modal" data-target="#FollowingNewsletsModal">
@@ -108,7 +102,7 @@
                     </div>    
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-left">   
                         <div class="pull-left">
-                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
+                            <a href="MicroBlog.html">
                                 <button class="nlicon_head"></button>                            
                             </a>
                         </div>                        
@@ -172,7 +166,7 @@
                                     <span class="small text-custom-merun">Specific Celebs+</span>
                                 </label>
                             </div>
-                            <a href="#" class="btn btn-danger btn-block" style="font-size:12px;">Write your Thoughtlet</a>
+                            <a href="#" class="btn btn-danger btn-block" style="font-size:12px;" data-toggle="modal" data-target="#WriteThoughtletModal">Write your Thoughtlet</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 borderleft">
                             <p>Posts from all categories mixed by default</p>
@@ -1980,6 +1974,70 @@
                             <img class="img-responsive" src="img/bg/Add2.png"> 
                         </div>
                     </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Snap a Story - modal -->    
+        <div class="modal fade" id="SnapaStoryModal" tabindex="-1" role="dialog" aria-labelledby="SnapaStoryModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog modal-md">                
+                <div class="modal-content">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button> 
+                        <h4 id="mySmallModalLabel" class="modal-title">Snap-a-Story</h4> 
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <textarea class="form-control" rows="2" placeholder="Write a update within 30 words describing your Selfie"></textarea>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6 text-custom-ash space-10" style="margin-left: 10px;">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-6 col-lg-offset-9 col-md-offset-9 space-10">
+                            <button class="btn btn-xs">Submit</button>
+                        </div>
+
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <!-- Write your Thoughtlet - modal -->    
+        <div class="modal fade" id="WriteThoughtletModal" tabindex="-1" role="dialog" aria-labelledby="WriteThoughtletModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:850px;">               
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+                            <img class="img-responsive" src="img/bg/Newslets_Logo_icon-02.png">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-8 col-xs-8" style="left: -65px;top:10px;">
+                            <p style="font-size:24px;">Good decision. <span class="text-muted">Write a post.</span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-custom-ash space-10 text-right">
+                            <p style="font-size: 24px;">Select a Form</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 text-custom-ash space-10">
+                            <p><a href="#" class="btn btn-success btn-block btn-lg">99 Words</a></p>
+                            <p><a href="#" class="btn btn-success btn-block btn-lg">150 Words</a></p>
+                            <p><a href="#" class="btn btn-success btn-block btn-lg">200 Words</a></p>
+                            <p><a href="#" class="btn btn-success btn-block btn-lg">1000 Words</a></p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 text-custom-ash space-10">
+                            <p class="write-thoughtlets">Formatted form with 1 visual</p>
+                            <p class="write-thoughtlets">Formatted form with 2 visuals</p>
+                            <p class="write-thoughtlets">Formatted form with 2 visuals</p>
+                            <p>Open format Format yourself to show your taste.</p>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-custom-ash space-20">
+                            <p>1. Your post will go to all of your Following and all of your Followers. So write to win over a dedicated audience.<br />
+                                2. Your Headline will go to Universal Stream. So coin a catchy headline so that it can grow you unlimited Followers.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
