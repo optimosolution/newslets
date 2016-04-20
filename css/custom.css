@@ -490,6 +490,18 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
 .under-scroll-text{
     padding-right: 20px;
 }
+.nlicon_home{
+    background:transparent url("../img/bg/home_dashboard.png") no-repeat top 3px left 25px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
+.nlicon_dashboard{
+    background:transparent url("../img/bg/home_dashboard.png") no-repeat top 0px left -65px;
+    height: 65px;
+    width: 100px;
+    border: 0px;
+}
 .nlicon_notification{
     background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left 5px;
     height: 65px;
