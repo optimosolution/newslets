@@ -560,3 +560,64 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
 .write-thoughtlets{
     margin: 10px 0px 36px 0px
 }
+/* profile page css */
+.profile-banner{
+    height: 15em;
+    padding: 1em;
+    background:#F3F882 url("../img/bg/profile-banner.jpg") no-repeat;
+    background-position: center;
+}
+.profile-container {
+    height: auto;
+}
+a:link.profile-picture, a:hover.profile-picture, a:visited.profile-picture {
+    display: block;
+    overflow: hidden;
+    float:left;
+    width: 150px;
+    height: 180px;   
+}
+img .profile-picture{
+    vertical-align: top;
+}
+.profile-container a {
+    margin-top: -115px;
+}
+.profile-name{
+    font-size:17px;
+    font-weight: 600;
+}
+/* inner profile */
+.profile-banner2{
+    height: 70px;
+    background:#F3F882 url("../img/bg/profile-banner.jpg") no-repeat;
+    background-position: center;
+}
+a:link.profile-picture2, a:hover.profile-picture2, a:visited.profile-picture2 {
+    display: block;
+    overflow: hidden;
+    float:left;
+    width: 50px;
+    height: 60px;   
+}
+img .profile-picture2{
+    vertical-align: top;
+}
+.profile-container2 {
+    height: auto;
+    margin-left:10px;
+}
+.profile-container2 a {
+    margin-top: -30px;
+}
+.profile-name2{
+    font-size:14px;
+    font-weight: 600;
+}
+
+.profile-following{
+    background-color:#CBD16A;
+    color: #000;
+    margin: 3px 5px 0px 0px;
+    padding: 2px;
+}
