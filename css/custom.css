@@ -630,3 +630,17 @@ img .profile-picture2{
     margin: 3px 5px 0px 0px;
     padding: 2px;
 }
+/*Snap Story CSS*/
+.snap-story-bg{
+    height: 65px;
+    background:#F3F882 url("../img/bg/snap_bg.png") repeat-x;
+}
+.snap-story-title{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.snap-story-upload{
+    background-color: #F0F0F0;
+    text-align: center;
+    padding: 10px 0px;
+}
