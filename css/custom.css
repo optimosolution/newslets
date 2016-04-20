@@ -561,11 +561,20 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     margin: 10px 0px 36px 0px
 }
 /* profile page css */
+.ProfileCanopy-headerBg {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 .profile-banner{
     height: 15em;
     padding: 1em;
     background:#F3F882 url("../img/bg/profile-banner.jpg") no-repeat;
     background-position: center;
+    background-size: 100%;
 }
 .profile-container {
     height: auto;
