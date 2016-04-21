@@ -45,16 +45,6 @@
                     <a class="navbar-brand active" href="index.html"><img src="img/bg/Newslets_Logo_icon-02.png" class="img-responsive center-block"></a> </div>
                 <div class="collapse navbar-collapse">
                     <div class="row">
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 col-lg-offset-5 col-md-offset-5">
-                            <a href="index.html">
-                                <button class="nlicon_home"></button>
-                            </a>
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                            <a href="dashboard_user.html">
-                                <button class="nlicon_dashboard"></button>
-                            </a>
-                        </div>
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                             <div class="dropdown">                        
                                 <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
@@ -76,15 +66,27 @@
                             <a href="#" data-toggle="modal" data-target="#ArchiveModal">
                                 <button class="nlicon_archive"></button>
                             </a>             
-                        </div>   
+                        </div> 
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 text-center space-10">
+                            <button class="btn btn-success btn-lg"><i class="fa fa-pencil"></i> Write another Note</button>                            
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <a href="index.html">
+                                <button class="nlicon_home"></button>
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <a href="dashboard_user.html">
+                                <button class="nlicon_dashboard"></button>
+                            </a>
+                        </div>                          
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                             <div class="dropdown pull-right" style="top:4px;">                        
                                 <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip" style="color:#666;">
                                     <i class="fa fa-user fa-4x"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                                    <li class="divider" role="separator"></li>
+                                    <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>                                    
                                     <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
                                 </ul>
                             </div>
@@ -92,6 +94,7 @@
                     </div>
                     <!--/.nav-collapse --> 
                 </div>
+            </div>
         </nav>     
         <div class="container-fluid nopadding">
             <div class="row">
@@ -470,7 +473,66 @@
                                 </div>
                             </div>
                             <div id="MyPost" class="tab-pane fade">
-                                <h3>My Post</h3>
+                                <div class="myposts_scroll under-scroll-text">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                        <div class="space-10">
+                                            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sagittis ipsum turpis, et maximus nibh elementum a. Morbi aliquam arcu in libero posuere, et suscipit felis lobortis. Curabitur eget magna turpis. Pellentesque tortor eros, tempor at vestibulum sed, posuere elementum augue.</p>
+                                            <img class="img-responsive" src="img/bg/Add6.png">
+                                            <p class="space-10">Nulla imperdiet consequat commodo. Suspendisse semper commodo nisl eget feugiat. Etiam fringilla gravida velit ac aliquam. Vestibulum vitae mauris vitae</p>
+                                            <p class="text-right"><a href="#" class="text-danger">Expand</a>&nbsp;&nbsp;<a href="#" class="text-danger">Edit</a>&nbsp;&nbsp;<a href="#" class="text-danger">Close</a></p>
+                                        </div>
+                                        <div class="mypost-bar"></div>
+                                    </div>
+                                </div>
                             </div>
                             <div id="DraftPost" class="tab-pane fade">
                                 <h3>Draft Post</h3>
@@ -532,6 +594,16 @@
                     railVisible: true,
                     railColor: '#303192',
                     color: '#00ADEE',
+                });
+
+            });
+            $(function () {
+                $('.myposts_scroll').slimScroll({
+                    height: '1090px',
+                    size: '10px',
+                    railVisible: true,
+                    railColor: '#949599',
+                    color: '#BDBEBE',
                 });
 
             });

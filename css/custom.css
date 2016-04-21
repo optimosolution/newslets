@@ -656,3 +656,9 @@ img .profile-picture2{
     text-align: center;
     padding: 10px 0px;
 }
+.modal-expand-link{
+    margin-right: 10px;
+}
+.mypost-bar{
+    border-bottom: 5px solid #F7F7F7;
+}
