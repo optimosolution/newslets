@@ -49,16 +49,6 @@
                     </ul>
                     <div class="row">
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                            <a href="index.html">
-                                <button class="nlicon_home"></button>
-                            </a>
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                            <a href="dashboard_user.html">
-                                <button class="nlicon_dashboard"></button>
-                            </a>
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                             <div class="dropdown">                        
                                 <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
                                     <button class="nlicon_ring"></button>
@@ -79,7 +69,17 @@
                             <a href="#" data-toggle="modal" data-target="#ArchiveModal">
                                 <button class="nlicon_archive"></button>
                             </a>             
-                        </div>   
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <a href="index.html">
+                                <button class="nlicon_home"></button>
+                            </a>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                            <a href="dashboard_user.html">
+                                <button class="nlicon_dashboard"></button>
+                            </a>
+                        </div>                           
                         <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                             <div class="dropdown pull-right" style="top:4px;">                        
                                 <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip" style="color:#666;">
@@ -104,11 +104,17 @@
 
                     <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-push-1 nopadding"> 
                         <h4 class="margintopmenu"><span class="label label-success">1000 Words</span></h4>
-
-                        <form><div class="form-group">
-                                <label for="exampleInputFile">Upload a visual <em class="fontnormal">/ you may</em></label>
-                                <input type="file" id="exampleInputFile1" class="filestyle" data-iconName="glyphicon glyphicon-circle-arrow-up" data-buttonName="btn-success" data-buttonText="Upload a visual">
+                        <form>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nopadding">
+                                <div class="form-group">
+                                    <label for="exampleInputFile">Upload a visual <em class="fontnormal">/ you may</em></label>
+                                    <input type="file" id="exampleInputFile1" class="filestyle" data-iconName="glyphicon glyphicon-circle-arrow-up" data-buttonName="btn-success" data-buttonText="Upload a visual">
+                                </div>
                             </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 pull-right">
+                                <a class="btn bg-color-red txt-color-white thumbnail" href="javascript:void(0);"><i class="fa fa-user fa-5x"></i></a>
+                            </div>
+                            <div class="clearfix"></div>
                             <div class="form-group"> 
                                 <label for="" >Write Headline</label>
                                 <input type="text" class="form-control" id="" placeholder="99 Characters">

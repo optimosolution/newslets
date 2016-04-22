@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="">
     <head>
-        <title>NewsLets | Celebs</title>
+        <title>NewsLets | Celeb</title>
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -128,13 +128,13 @@
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <div class="row">
                         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 text-center">
-                            <h4 class="text-custom-ash" style="position:relative;top:-9px;">Celebs</h4>
-                            <p class="text-custom-ash" style="font-size:16px;">Are they Following?</p>
+                            <h4 class="text-custom-ash" style="position:relative;top:-9px;">Celeb</h4>
+                            <p class="text-custom-ash" style="font-size:16px;">What else I must<br />do for them?</p>
                             <div class="space-40"></div>
                             <h5 class="text-custom-ash">Jennifer Lopez<br />New York</h5>
                             <div class="space-20"></div>
-                            <a href="#" style="color:#888;"><i class="fa fa-3x fa-gear"></i></a>
-                            <div class="small text-primary">Settings</div>
+                            <a href="#" style="color:#888;" data-toggle="modal" data-target="#SettingsMenuModal"><i class="fa fa-3x fa-gear"></i></a>
+                            <div class="small text-primary" data-toggle="modal" data-target="#SettingsMenuModal">Settings</div>
                             <div class="space-20"></div>
                             <a href="#"><img class="img-responsive center-block" src="img/bg/newslets_logo_ua.png"></a>
                             <div class="space-50"></div>
@@ -176,7 +176,13 @@
                                     <span class="small text-custom-merun">Specific Anonymous+</span>
                                 </label>
                             </div>
-                            <a href="#" class="btn btn-danger btn-block" style="font-size:12px;" data-toggle="modal" data-target="#WriteThoughtletModal">Write your Note</a>
+                            <div class="checkbox text-left">
+                                <label>
+                                    <input type="checkbox" value="">
+                                    <span class="small text-default">Feed SnapStory Only</span>
+                                </label>
+                            </div>
+                            <a href="#" class="btn btn-danger btn-block" style="font-size:16px;" data-toggle="modal" data-target="#WriteThoughtletModal">Write your Note</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 borderleft">
                             <p>Posts from all categories mixed by default</p>
@@ -430,7 +436,7 @@
                         <table class="table table-responsive">                         
                             <tbody> 
                                 <tr class="info"> 
-                                    <td style="background-color:#AAE0FA;width:130px;">User Anonymous</td>  
+                                    <td style="background-color:#AAE0FA;">Celeb</td>  
                                     <td style="background-color:#AAE0FA;width:60px;"><span class="text-danger text-center">40<span class="text-custom-merun">/50</span></span></td>
                                     <td>Defollow <span class="text-danger">38</span><span class="text-custom-merun">/15</span></td> 
                                     <td>Comments <span class="text-danger">36</span><span class="text-custom-merun">/15</span></td> 
@@ -482,7 +488,7 @@
                                     <td colspan="8" class="td-small-height">&nbsp;</td> 
                                 </tr> 
                                 <tr class="info"> 
-                                    <td style="background-color:#AAE0FA;">Celeb</td>  
+                                    <td style="background-color:#AAE0FA;width:130px;">User Anonymous</td>  
                                     <td style="background-color:#AAE0FA;width:60px;"><span class="text-danger text-center">40<span class="text-custom-merun">/50</span></span></td>
                                     <td>Defollow <span class="text-danger">38</span><span class="text-custom-merun">/15</span></td> 
                                     <td>Comments <span class="text-danger">36</span><span class="text-custom-merun">/15</span></td> 
@@ -490,7 +496,7 @@
                                     <td>Shared <span class="text-danger">39</span><span class="text-custom-merun">/38</span></td> 
                                     <td>Useful <span class="text-danger">67</span><span class="text-custom-merun">/52</span></td> 
                                     <td>Relevant <span class="text-danger">87</span><span class="text-custom-merun">/52</span></td> 
-                                </tr> 
+                                </tr>                                
                             </tbody> 
                         </table>
                     </div>
@@ -1536,8 +1542,65 @@
                                 <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
                                     <span class="small">3 Hours ago</span></p>                        
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
+                            </div>  
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
+                            </div>  
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
+                            </div>  
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
+                            </div>  
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
+                            </div>  
+                        </div>
+                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
+                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                    <span class="small">3 Hours ago</span></p>                        
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
                             </div> 
                         </div>
                         <div class="row magentabg paddingtb paddinglr margintop marginbottom">
@@ -1545,53 +1608,10 @@
                                 <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
                                     <span class="small">3 Hours ago</span></p>                        
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
-                            </div> 
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small">3 Hours ago</span></p>                        
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
-                            </div> 
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small">3 Hours ago</span></p>                        
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
-                            </div> 
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small">3 Hours ago</span></p>                        
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
-                            </div> 
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small">3 Hours ago</span></p>                        
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
-                            </div> 
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small">3 Hours ago</span></p>                        
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6 nopadding">
-                                <p>July Rodrigez made a <strong>Share</strong> engagement on your Post</p> 
+                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                <p><strong>Headline of the News</strong></p> 
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
+                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
                             </div> 
                         </div>
                     </div>
@@ -2101,6 +2121,7 @@
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <input type="text" placeholder="Write a catchy headline within 7 words" class="form-control"><br />
                             <textarea class="form-control" rows="2" placeholder="Write a update within 30 words describing your Selfie"></textarea>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -2242,6 +2263,248 @@
                 </div>
             </div>
         </div>
+        <!-- Settings Menu - modal -->    
+        <div class="modal fade" id="SettingsMenuModal" tabindex="-1" role="dialog" aria-labelledby="SettingsMenuModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Set things straight.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-center" style="padding:100px 0px 30px 0px; ">What do you want to do now?</h4>
+                    <div class="row space-20">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
+                            <h4 data-toggle="modal" data-target="#ChangePasswordModal">Change Password</h4>
+                            <h4 data-toggle="modal" data-target="#AuthorizedModal">Get Authorized User of your Account</h4>
+                            <h4 data-toggle="modal" data-target="#ChangeUsernameModal">Change Username</h4>
+                            <h4 data-toggle="modal" data-target="#SetBackgroundModal">Set Background Color</h4>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+        </div>
+        <!-- Settings - Change password - modal -->    
+        <div class="modal fade" id="ChangePasswordModal" tabindex="-1" role="dialog" aria-labelledby="ChangePasswordModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Change Password</p>
+                        </div>
+                    </div>
+                    <div class="row space-20" style="padding-top:100px;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
+                            <input type="password" placeholder="Old Password" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="password" placeholder="Confirm Old Password" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="password" placeholder="New Password" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="password" placeholder="Confirm New Password" class="form-control">
+                            <div class="space-2"></div>
+                            <select class="form-control">
+                                <option>Answer any 2 questions you set before</option>
+                            </select><br />                            
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <div class="row space-30 nopadding">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 nopadding">
+                            <button class="btn btn-xs btn-success pull-right">Confirm</button>                
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+        </div>
+        <!-- Settings - Get Authorized User of your Account - modal -->    
+        <div class="modal fade" id="AuthorizedModal" tabindex="-1" role="dialog" aria-labelledby="AuthorizedLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Authorize your Marketing Tool.</p>
+                        </div>
+                    </div>
+                    <div class="row space-20" style="padding-top:100px;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
+                            <input type="text" placeholder="First Name" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Last Name" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="User's Primary E-mail ID" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Confirm User's Primary E-mail ID" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Create User's Password" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Confirm User's Created Password" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Confirm Category of the Account" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Confirm New Password" class="form-control">
+                            <div class="space-2"></div>
+                            <select class="form-control">
+                                <option>Answer any 2 questions you set before</option>
+                            </select><br />                            
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <div class="row space-10 nopadding">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 nopadding">
+                            <p class="small">*User will access your account by first Selecting the Category of the Account, and then input Primary Email ID and Password. This user can work on your Account (Post and SnapStory uploading, make Engagement, Edit on Posts).</p> 
+                            <div class="space-20"></div>
+                            <button class="btn btn-xs btn-success pull-right">Authorize</button>                
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+        </div>
+        <!-- Settings - Change Username - modal -->    
+        <div class="modal fade" id="ChangeUsernameModal" tabindex="-1" role="dialog" aria-labelledby="ChangeUsernameLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Change Username only for better reason.</p>
+                        </div>
+                    </div>
+                    <div class="row space-20" style="padding-top:100px;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
+                            <input type="text" placeholder="Old UserName" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="New UserName" class="form-control">
+                            <div class="space-2"></div>
+                            <input type="text" placeholder="Confirm New UserName" class="form-control">
+                            <div class="space-2"></div>                            
+                            <select class="form-control">
+                                <option>Answer any 2 questions you set before</option>
+                            </select><br />                            
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <div class="row space-10 nopadding">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 nopadding">
+                            <p class="small">*Username and Profile Picture are used together to go with your Posts, Snap-a-Story and Engagements.</p> 
+                            <div class="space-20"></div>
+                            <button class="btn btn-xs btn-success pull-right">Change</button>                
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+        </div>
+        <!-- Settings - Set Background Color - modal -->    
+        <div class="modal fade" id="SetBackgroundModal" tabindex="-1" role="dialog" aria-labelledby="SetBackgroundLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Set Background Color</p>
+                        </div>
+                    </div>
+                    <div class="row space-20" style="padding-top:100px;">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 text-center">
+                            <img class="img-responsive" src="img/bg/set_background.png">                           
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <div class="row space-10 nopadding">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 nopadding">
+                            <p class="small text-center">*Set your mood on the color you feel good.</p> 
+                            <div class="space-20"></div>
+                            <button class="btn btn-xs btn-success pull-right">Set</button>                
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+        </div>   
         <!-- jQuery --> 
         <script src="js/jquery-2.1.0.min.js"></script> 
         <!-- Bootstrap JavaScript --> 

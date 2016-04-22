@@ -662,3 +662,10 @@ img .profile-picture2{
 .mypost-bar{
     border-bottom: 5px solid #F7F7F7;
 }
+.text-default{
+    color: #8d8b2d;
+}
+.settings-bg{
+    background-color: #AAE0FA;
+    padding: 30px;
+}
