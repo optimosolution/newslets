@@ -676,3 +676,10 @@ img .profile-picture2{
 .profile-menu-text{
     font-size: 15px;
 }
+.setting-head-text{
+    font-size: 18px;
+}
+.setting-footer-text{
+    font-size: 12px;
+    text-align: justify;
+}
