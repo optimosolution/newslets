@@ -454,9 +454,13 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
 }
 .text-analytics{
     font-size: 24px;
+    color: #000;
 }
 .text-analytics-ass{
     color: #999;
+}
+.text-analytics-white{
+    color: #FFF;
 }
 .text-analytics-header{
     background-color: #6CCFF6;
@@ -582,7 +586,7 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     top: 0;
 }
 .profile-banner{
-    height: 15em;
+    height: 23em;
     padding: 1em;
     background:#F3F882 url("../img/bg/profile-banner.jpg") no-repeat;
     background-position: center;
@@ -668,4 +672,7 @@ img .profile-picture2{
 .settings-bg{
     background-color: #AAE0FA;
     padding: 30px;
+}
+.profile-menu-text{
+    font-size: 15px;
 }

@@ -115,34 +115,14 @@
                         <!--Signin Start here-->
                         <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 nopadding center-block text-right pull-right btn-signin-pad">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle signs_buttonbg" data-toggle="dropdown" aria-expanded="false">&nbsp;Sign In &nbsp;<span class="fa fa-chevron-down"></span> </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class="dropdown-header"><strong>Which category?</strong></li>
-                                    <li class="dropdown-header">Sign in as your category</li>
-                                    <li class="divider"></li>
-                                    <li><a data-toggle="modal" data-target="#myModal">User Anonymous</a></li>
-                                    <li><a data-toggle="modal" data-target="#myModal">Social Journalist</a></li>
-                                    <li><a data-toggle="modal" data-target="#myModal" >Organization</a></li>
-                                    <li><a data-toggle="modal" data-target="#myModal" >Brand</a></li>
-                                    <li><a data-toggle="modal" data-target="#myModal" >Celeb</a></li>
-                                </ul>
+                                <button type="button" class="btn btn-default signs_buttonbg" data-toggle="modal" data-target="#SignInModal">&nbsp;Sign In &nbsp;<span class="fa fa-chevron-down"></span> </button>
                             </div>
                             <p class="help-block small">Sign in as your category</p>
                         </div>
                         <!--Signup Start here-->
                         <div class="col-lg-1 col-lg-offset-9 col-md-1 col-md-offset-9 col-sm-6 col-xs-12 nopadding center-block text-center pull-right"> <!--pulluptopmenu-->
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle signs_buttonbg" data-toggle="dropdown" aria-expanded="false">&nbsp;Sign Up &nbsp;<span class="fa fa-chevron-up"></span> </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class="dropdown-header"><strong>Which category?</strong></li>
-                                    <li class="dropdown-header">Read description if not sure!</li>
-                                    <li class="divider"></li>
-                                    <li><a href="yousers.html">User Anonymous</a></li>
-                                    <li><a href="citizenjournalists.html">Social Journalist</a></li>
-                                    <li><a href="organization.html">Organization</a></li>
-                                    <li><a href="brands.html">Brand</a></li>
-                                    <li><a href="celebs.html">Celeb</a></li>
-                                </ul>
+                                <button type="button" class="btn btn-default signs_buttonbg" data-toggle="modal" data-target="#SignUpModal">&nbsp;Sign Up &nbsp;<span class="fa fa-chevron-up"></span> </button>                                
                             </div>
                             <p class="help-block small nowrap">Sign up as your category</p>
                             <a class="small text-center home-text-link" data-toggle="modal" data-target="#infoModal" href="">Know Why</a>
@@ -256,6 +236,84 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 footer-bottom-bgcolor">&nbsp;</div>
+            </div>
+        </div>
+        <!-- Sign Up - modal -->    
+        <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Sign Up. Brand yourself.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-center" style="padding:80px 0px 0px 0px; ">Which category?</h4>
+                    <p class="text-center">Read description if not sure</p>
+                    <div class="row space-20">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
+                            <p data-toggle="modal" data-target="#1">User Anonymous</p>
+                            <p data-toggle="modal" data-target="#2">Social Journalist</p>
+                            <p data-toggle="modal" data-target="#3">Organization</p>
+                            <p data-toggle="modal" data-target="#4">Brand</p>
+                            <p data-toggle="modal" data-target="#5">Cleb</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <p class="space-20 small text-center">Your category is part of your ID.</p>
+                    <br /><br /><br /><br />
+                </div>
+            </div>
+        </div>
+        <!-- Sign In - modal -->    
+        <div class="modal fade" id="SignInModal" tabindex="-1" role="dialog" aria-labelledby="SignInModalLabel">
+            <!--<div class="modal-dialog modal-lg">-->
+            <div class="modal-dialog" role="document" style="width:700px;">                 
+                <div class="modal-content nopadding">
+                    <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                            <span aria-hidden="true">×</span>
+                        </button>                       
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snap-story-bg nopadding">   
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                            <img src="img/bg/snap_logo.png" style="height: 65px; border: 0px;">
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <p class="snap-story-title" style="position: relative; left: -45px;">Sign In. Communicate effectively.</p>
+                        </div>
+                    </div>
+                    <h4 class="text-center" style="padding:80px 0px 0px 0px; ">Which category?</h4>
+                    <p class="text-center">Sign in as your category</p>
+                    <div class="row space-20">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
+                            <p data-toggle="modal" data-target="#1">User Anonymous</p>
+                            <p data-toggle="modal" data-target="#2">Social Journalist</p>
+                            <p data-toggle="modal" data-target="#3">Organization</p>
+                            <p data-toggle="modal" data-target="#4">Brand</p>
+                            <p data-toggle="modal" data-target="#5">Cleb</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                        </div>                      
+                    </div>
+                    <p class="space-20 small text-center">Your category is part of your ID.</p>
+                    <br /><br /><br /><br />
+                </div>
             </div>
         </div>
         <!-- jQuery --> 

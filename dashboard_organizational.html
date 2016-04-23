@@ -114,8 +114,8 @@
                                 <i class="fa fa-user fa-4x"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="user_profile.html"><i class="fa fa-user"></i> Profile</a></li>
-                                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
+                                <li><a href="user_profile.html"><i class="fa fa-user"></i> <span class="profile-menu-text">Profile</span></a></li>
+                                <li><a href="#"><i class="fa fa-power-off"></i> <span class="profile-menu-text">Log Out</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -137,7 +137,7 @@
                             <div class="small text-primary" data-toggle="modal" data-target="#SettingsMenuModal">Settings</div>
                             <div class="space-20"></div>
                             <a href="#"><img class="img-responsive center-block" src="img/bg/newslets_logo_ua.png"></a>
-                            <div class="space-50"></div>
+                            <div class="space-30"></div>
                             <h5 class="text-pink text-left">Follow Objectively</h5>
                             <div class="space-20"></div>
                             <p class="text-muted text-left">Select to view</p>                                                        
@@ -179,9 +179,10 @@
                             <div class="checkbox text-left">
                                 <label>
                                     <input type="checkbox" value="">
-                                    <span class="small text-default">Feed SnapStory Only</span>
+                                    <span class="small text-pink">Feed SnapStory Only</span>
                                 </label>
                             </div>
+                            <div class="space-20"></div>
                             <a href="#" class="btn btn-danger btn-block" style="font-size:12px;" data-toggle="modal" data-target="#WriteThoughtletModal">Write your Message</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 borderleft">
@@ -409,19 +410,19 @@
                     </div>      
                     <div class="space-10"></div>
                     <hr style="border-top: 1px solid #000;" />
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-analytics-content">
-                        <p><span class="text-analytics">Analytics/</span> <span class="text-analytics-ass">how are you doing so far?</span></p>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-analytics-header">
+                        <p><span class="text-analytics">Analytics/</span> <span class="text-analytics-white">how are you doing so far?</span></p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                         <div class="text-analytics-header">Your Social Score</div>
                         <div class="text-analytics-content"><span class="text-danger">1213</span></div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                        <div class="text-analytics-header">Frequency Of Writing Thoughtlets</div>
+                        <div class="text-analytics-header">Frequency Of Writing Organizations</div>
                         <div class="text-analytics-content">Low <span class="text-danger">12</span> Medium <span class="text-danger">24</span> High <span class="text-danger">48</span></div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                        <div class="text-analytics-header">Thoughtlets</div>
+                        <div class="text-analytics-header">Organizations</div>
                         <div class="text-analytics-content">With Pic.<span class="text-danger">46</span> Without Pic <span class="text-danger">46</span></div>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
@@ -429,7 +430,7 @@
                         <div class="text-analytics-content">Edited <span class="text-danger">09</span> Deleted <span class="text-danger">13</span></div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 paddingtop">
-                        <p>Result From your total of <span class="text-danger">92</span> Thoughtlets <span class="text-muted">as of last posting.</span><span class="text-muted" style="margin-left: 40px;">All figures are reciprocal</span></p>
+                        <p>Result From your total of <span class="text-danger">92</span> Organizations <span class="text-muted">as of last posting.</span><span class="text-muted" style="margin-left: 40px;">All figures are reciprocal</span></p>
                     </div>
                     <div class="clearfix space-10"></div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -2287,10 +2288,10 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         </div>
                         <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
-                            <h4 data-toggle="modal" data-target="#ChangePasswordModal">Change Password</h4>
-                            <h4 data-toggle="modal" data-target="#AuthorizedModal">Get Authorized User of your Account</h4>
-                            <h4 data-toggle="modal" data-target="#ChangeUsernameModal">Change Username</h4>
-                            <h4 data-toggle="modal" data-target="#SetBackgroundModal">Set Background Color</h4>
+                            <p data-toggle="modal" data-target="#ChangePasswordModal">Change Password</p>
+                            <p data-toggle="modal" data-target="#AuthorizedModal">Get Authorized User of your Account</p>
+                            <p data-toggle="modal" data-target="#ChangeUsernameModal">Change Username</p>
+                            <p data-toggle="modal" data-target="#SetBackgroundModal">Set Background Color</p>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         </div>                      
@@ -2323,9 +2324,7 @@
                         </div>
                         <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
                             <input type="password" placeholder="Old Password" class="form-control">
-                            <div class="space-2"></div>
-                            <input type="password" placeholder="Confirm Old Password" class="form-control">
-                            <div class="space-2"></div>
+                            <div class="space-2"></div>                            
                             <input type="password" placeholder="New Password" class="form-control">
                             <div class="space-2"></div>
                             <input type="password" placeholder="Confirm New Password" class="form-control">
@@ -2385,10 +2384,15 @@
                             <div class="space-2"></div>
                             <input type="text" placeholder="Confirm User's Created Password" class="form-control">
                             <div class="space-2"></div>
-                            <input type="text" placeholder="Confirm Category of the Account" class="form-control">
-                            <div class="space-2"></div>
-                            <input type="text" placeholder="Confirm New Password" class="form-control">
-                            <div class="space-2"></div>
+                            <select class="form-control">
+                                <option>Confirm Category of the Account</option>
+                                <option>User Anonymous</option>
+                                <option>Brand</option>
+                                <option>Celeb</option>
+                                <option>Organization</option>
+                                <option>Social Journalist</option>
+                            </select>
+                            <div class="space-2"></div>                            
                             <select class="form-control">
                                 <option>Answer any 2 questions you set before</option>
                             </select><br />                            
