@@ -696,3 +696,8 @@ img .profile-picture2{
 .space-right-10{
     margin-right: 10px;
 }
+.single-page-logo{
+    position: relative;
+    top: -16px;
+    height: 86px;
+}
