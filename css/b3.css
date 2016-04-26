@@ -90,14 +90,15 @@
     font-family: 'Oleo Script Swash Caps', cursive;
     color: #FFFFFF;
     transition: color .5s;
-    height: 84px;
+    height: 95px;
     position: relative;
-    top: -20px;
+    top: -15px;
+    background:#FFF;
 }
 
 .navbar-default .navbar-brand:hover {
-    background:#EDEEF0;
-    height: 84px;
+    background:#FFF;
+    height: 95px;
 }
 
 .navbar-default .navbar-nav>li>a,
