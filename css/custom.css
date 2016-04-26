@@ -696,8 +696,24 @@ img .profile-picture2{
 .space-right-10{
     margin-right: 10px;
 }
+.know-why-pos{
+    left: 10px;
+    position: relative;
+    top: -22px;
+}
+.home-page-logo{
+    position: relative;
+    top: -16px;
+    height: 96px;
+    background-color: #FFF;
+}
 .single-page-logo{
     position: relative;
     top: -16px;
     height: 86px;
+    background-color: #FFF;
+}
+.blog-page-logo{
+    height: 86px;
+    background-color: #FFF;
 }
