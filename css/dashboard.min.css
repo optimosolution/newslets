@@ -3657,8 +3657,9 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
         float: left
     }
     .navbar-nav>li>a {
-        padding-top: 15px;
-        padding-bottom: 15px
+        /*padding-top: 15px;
+        padding-bottom: 15px*/
+        padding: 5px 0px;
     }
 }
 .navbar-form {
