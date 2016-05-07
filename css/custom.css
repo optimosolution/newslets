@@ -172,7 +172,7 @@ p.small {
 }
 .nomargin {
     margin: 0 !important;
-    height: 64px;
+    /*height: 64px;*/
 }
 .nomargin-home {
     margin: 0 !important;
@@ -500,74 +500,74 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
 }
 .nlicon_home{
     background:transparent url("../img/bg/home_dashboard.png") no-repeat top 3px left 25px;
-    height: 65px;
-    width: 100px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_dashboard{
-    background:transparent url("../img/bg/home_dashboard.png") no-repeat top 0px left -65px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/home_dashboard.png") no-repeat top 5px left -35px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_notification{
     background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left 5px;
-    height: 65px;
-    width: 100px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_ring{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -100px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -70px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_share{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -185px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -135px;
+    height: 40px;
+    width: 70px;
     border: 0px;
 }
 .nlicon_archive{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -270px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top 5px left -190px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_selfee{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -65px left 5px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -45px left 5px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_read_book{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -60px left -100px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -40px left -65px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_smile{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -60px left -185px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -40px left -135px;
+    height: 40px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_pencil{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -58px left -270px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -37px left -192px;
+    height: 45px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_new_write{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -140px left -100px;
-    height: 65px;
-    width: 100px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -90px left -65px;
+    height: 50px;
+    width: 75px;
     border: 0px;
 }
 .nlicon_head{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -140px left -210px;
-    height: 65px;
-    width: 70px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -97px left -135px;
+    height: 55px;
+    width: 75px;
     border: 0px;
 }
 .nav-color-other{
