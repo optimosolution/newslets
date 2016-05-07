@@ -180,7 +180,7 @@ p.small {
 }
 .nomargin2 {
     margin: 0 !important;
-    height: 71px;
+
 }
 .nomarginbottom,.nomarginb{margin-bottom:0px !important;}
 .nomargintop,.nomargint{margin-top:0px !important;}
@@ -559,7 +559,7 @@ a.home-text-link:link, a.home-text-link:visited, a.home-text-link:hover, a.home-
     border: 0px;
 }
 .nlicon_new_write{
-    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -90px left -65px;
+    background:transparent url("../img/bg/top_nav_bg.png") no-repeat top -93px left -65px;
     height: 50px;
     width: 75px;
     border: 0px;
@@ -652,8 +652,7 @@ img .profile-picture2{
 }
 /*Snap Story CSS*/
 .snap-story-bg{
-    height: 65px;
-    background:#F3F882 url("../img/bg/snap_bg.png") repeat-x;
+    background:transparent url("../img/bg/snap_bg.png") repeat-x;
 }
 .single-page-bg{
     background:#CBCC68 url("../img/bg/snap_bg.png") repeat-x;
@@ -710,6 +709,11 @@ img .profile-picture2{
 .single-page-logo{
     position: relative;
     top: -16px;
+    height: 86px;
+    background-color: #FFF;
+}
+.single-page-logo2{
+    position: relative;
     height: 86px;
     background-color: #FFF;
 }
