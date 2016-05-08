@@ -25,8 +25,8 @@
         <!-- Bootstrap CSS -->
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/b3.css" rel="stylesheet" media="screen">
-        <link href="css/custom.css" rel="stylesheet" media="screen">
+        <link href="css/newslets_b3.css" rel="stylesheet" media="screen">
+        <link href="css/newslets.css" rel="stylesheet" media="screen">
         <link href="css/dashboard.min.css" rel="stylesheet" media="screen">
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -55,17 +55,13 @@
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="row">
-                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12 text-center">
-                                    <ul class="nav navbar-nav text-center">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <ul class="nav navbar-nav">
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#ActivitiesModal">
                                                 <button class="nlicon_notification"></button>
                                             </a>
                                         </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                                    <ul class="nav navbar-nav navbar-left">
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
                                                 <button class="nlicon_ring"></button>
@@ -86,8 +82,8 @@
                                                 <button class="nlicon_archive"></button>
                                             </a>
                                         </li>
-                                        <li style="margin:0px 80px;">
-                                            <a href="#" data-toggle="modal" data-target="#SnapaStoryModal">
+                                        <li style="margin:0px 40px;">
+                                            <a href="#" data-toggle="modal" data-target="#SnapaStoryModal" data-dismiss="modal">
                                                 <button class="nlicon_selfee"></button>
                                             </a>
                                         </li>
@@ -111,12 +107,7 @@
                                                 <button class="nlicon_new_write"></button>
                                             </a> 
                                         </li>
-                                    </ul>
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li style="font-size:12px;margin-top:20px;">
-                                            Read Headlines of <br />posts as Microblog
-                                        </li>
-                                        <li>
+                                        <li style="margin-left: 50px;">
                                             <a href="MicroBlog.html">
                                                 <button class="nlicon_head"></button>                            
                                             </a>
@@ -131,8 +122,13 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </div>                                                   
-                            </div>                        
+                                    <ul class="nav navbar-nav navbar-right" style="display: none;">
+                                        <li style="font-size:12px;margin-top:20px;">
+                                            Read Headlines of <br />posts as Microblog
+                                        </li>                                        
+                                    </ul>
+                                </div>  
+                            </div>                    
                         </div>    
                     </div>                    
                 </div><!-- /.navbar-collapse -->
@@ -616,7 +612,7 @@
         <div class="space-10"></div>
         <footer class="footer">
             <div class="container-fluid">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding footer-top-margin">
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 nopadding">
                         <div class="space-10"></div>
                         <p class="copyrights">Copyrights &copy; Newslets Inc. 2015-16</p>                       
@@ -1101,7 +1097,7 @@
                         <table class="table"> 
                             <tbody> 
                                 <tr style="background-color: #D5D362;"> 
-                                    <td width="50%">Relevant given by you on others’ Posts</td> 
+                                    <td width="50%">Relevant given by you on others’</td> 
                                     <td width="20%">Date</td> 
                                     <td width="15%">Time</td> 
                                     <td width="15%">Points</td> 
@@ -1461,7 +1457,7 @@
                         <table class="table"> 
                             <tbody> 
                                 <tr style="background-color: #D5D362;"> 
-                                    <td width="50%">Comments written by you on others' Posts</td> 
+                                    <td width="50%">Comments written by you on others'</td> 
                                     <td width="20%">Date</td> 
                                     <td width="15%">Time</td> 
                                     <td width="15%">Points</td> 
@@ -1558,84 +1554,79 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     </div>
-                    <p>Activities of your Following/Followers on your Posts</p>
-                    <div class="modal_activities">
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                    <div class="modal_activities modal-bacground">
+                        <div class="">
+                            <p>Activities of your Following/Followers on your Posts</p>
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam elit...</div>
+                                </div>  
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div>  
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam elit...</div>
+                                </div>  
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div>  
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam  elit...</div>
+                                </div>  
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div>  
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam elit...</div>
+                                </div>  
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div>  
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam elit...</div>
+                                </div>  
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div>  
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam elit...</div>
+                                </div> 
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div> 
-                        </div>
-                        <div class="row magentabg paddingtb paddinglr margintop marginbottom">
-                            <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
-                                <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
-                                    <span class="small nowrap">3 Hours ago</span></p>                        
+                            <div class="row modal-backgound-color paddingtb marginbottom">
+                                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                                    <p><img style="height:60px; width:60px;; margin-right:6px;" class="img-responsive" src="img/bg/add_july.png"> 
+                                        <span class="small nowrap">3 Hours ago</span></p>                        
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
+                                    <p class="modal-text-header">Headline of the News</p> 
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam elit...</div>
+                                </div> 
                             </div>
-                            <div class="col-lg-10 col-md-10 col-sm-6 col-xs-6">
-                                <p><strong>Headline of the News</strong></p> 
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus in massa a hendrerit. Etiam in pulvinar elit...</div>
-                                <a href="#" class="pull-right text-danger modal-expand-link">Expand</a>
-                            </div> 
                         </div>
                     </div>
                 </div>
@@ -2133,8 +2124,8 @@
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                             <p class="space-10 snap-story-upload">
-                                <i class="fa fa-camera fa-3x" style="color:#ACDFF6;"></i><br />
-                                <span class="text-muted small">Upload your image first before writing text</span>
+                                <i class="fa fa-camera fa-3x" style="color:#ACDFF6;"></i> <i class="fa fa-video-camera fa-3x" style="color:#ACDFF6;"></i><br />
+                                <span class="text-muted small">Upload your image/video first before writing text</span>
                             </p>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
@@ -2145,7 +2136,7 @@
                         </div>
                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                             <input type="text" placeholder="Write a catchy headline within 7 words" class="form-control"><br />
-                            <textarea class="form-control" rows="2" placeholder="Write a update within 30 words describing your Selfie"></textarea>
+                            <textarea class="form-control" rows="2" placeholder="Write an update within 30 words describing your Selfie"></textarea>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
                         </div>                      
@@ -2596,7 +2587,7 @@
                     size: '10px',
                 });
                 $('.modal_activities').slimScroll({
-                    height: '550px',
+                    height: '580px',
                     opacity: 0.2,
                     width: '98%',
                     size: '10px',
