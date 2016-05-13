@@ -2311,10 +2311,10 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         </div>
                         <div class="col-lg-6 col-md-8 col-sm-6 col-xs-6 settings-bg text-center">
-                            <p class="setting-head-text" data-toggle="modal" data-target="#ChangePasswordModal" data-dismiss="modal">Change Password</p>
-                            <p class="setting-head-text" data-toggle="modal" data-target="#AuthorizedModal" data-dismiss="modal">Get Authorized User of your Account</p>
-                            <p class="setting-head-text" data-toggle="modal" data-target="#ChangeUsernameModal" data-dismiss="modal">Change Username</p>
-                            <p class="setting-head-text" data-toggle="modal" data-target="#SetBackgroundModal" data-dismiss="modal">Set Background Color</p>
+                            <p class="setting-head-text" data-toggle="modal" data-target="#ChangePasswordModal">Change Password</p>
+                            <p class="setting-head-text" data-toggle="modal" data-target="#AuthorizedModal">Get Authorized User of your Account</p>
+                            <p class="setting-head-text" data-toggle="modal" data-target="#ChangeUsernameModal">Change Username</p>
+                            <p class="setting-head-text" data-toggle="modal" data-target="#SetBackgroundModal">Set Background Color</p>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         </div>                      
@@ -2594,18 +2594,20 @@
                     size: '10px',
                 });
                 $('[data-toggle="tooltip"]').tooltip();
-                $("#ChangePasswordModal").on('click', 'button[data-dismiss]', function () {
-                    window.location.reload();
-                });
-                $("#AuthorizedModal").on('click', 'button[data-dismiss]', function () {
-                    window.location.reload();
-                });
-                $("#ChangeUsernameModal").on('click', 'button[data-dismiss]', function () {
-                    window.location.reload();
-                });
-                $("#SetBackgroundModal").on('click', 'button[data-dismiss]', function () {
-                    window.location.reload();
-                });
+                /*
+                 $("#ChangePasswordModal").on('click', 'button[data-dismiss]', function () {
+                 window.location.reload();
+                 });
+                 $("#AuthorizedModal").on('click', 'button[data-dismiss]', function () {
+                 window.location.reload();
+                 });
+                 $("#ChangeUsernameModal").on('click', 'button[data-dismiss]', function () {
+                 window.location.reload();
+                 });
+                 $("#SetBackgroundModal").on('click', 'button[data-dismiss]', function () {
+                 window.location.reload();
+                 });
+                 */
             });
         </script>
     </body>
