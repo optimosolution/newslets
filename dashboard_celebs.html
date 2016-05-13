@@ -59,12 +59,12 @@
                                     <ul class="nav navbar-nav">
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#ActivitiesModal">
-                                                <button class="nlicon_notification"></button>
+                                                <button class="nlicon_notification" data-toggle="tooltip" data-placement="bottom" title="Engagement Notifcations"></button>
                                             </a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                                <button class="nlicon_ring"></button>
+                                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <button class="nlicon_ring"  data-toggle="tooltip" data-placement="right" title="Relevant Useful Comment"></button>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                                 <li><a href="#" data-toggle="modal" data-target="#RelevantModal">Relevant</a></li>
@@ -74,47 +74,47 @@
                                         </li>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#ShareModal">
-                                                <button class="nlicon_share"></button>
+                                                <button class="nlicon_share" data-toggle="tooltip" data-placement="bottom" title="Results of social shares"></button>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#ArchiveModal">
-                                                <button class="nlicon_archive"></button>
+                                                <button class="nlicon_archive" data-toggle="tooltip" data-placement="bottom" title="Results of social Archive"></button>
                                             </a>
                                         </li>
                                         <li style="margin:0px 40px;">
                                             <a href="#" data-toggle="modal" data-target="#SnapaStoryModal" data-dismiss="modal">
-                                                <button class="nlicon_selfee"></button>
+                                                <button class="nlicon_selfee" data-toggle="tooltip" data-placement="bottom" title="Post Snap-a-Story"></button>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#FollowingNewsletsModal">
-                                                <button class="nlicon_read_book"></button>
+                                                <button class="nlicon_read_book" data-toggle="tooltip" data-placement="bottom" title="#Trending News from Social Journalists"></button>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#FollowingMessagesModal">
-                                                <button class="nlicon_smile"></button>
+                                                <button class="nlicon_smile" data-toggle="tooltip" data-placement="bottom" title="#Trending Messages from Organizations"></button>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#FollowingNotesModal">
-                                                <button class="nlicon_pencil"></button>
+                                                <button class="nlicon_pencil" data-toggle="tooltip" data-placement="bottom" title="#Trending Notes from Celebs"></button>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#FollowingContentsModal">
-                                                <button class="nlicon_new_write"></button>
+                                                <button class="nlicon_new_write" data-toggle="tooltip" data-placement="bottom" title="#Trending Contents from Busineses & Brands"></button>
                                             </a> 
                                         </li>
                                         <li style="margin-left: 50px;">
                                             <a href="MicroBlog.html">
-                                                <button class="nlicon_head"></button>                            
+                                                <button class="nlicon_head" data-toggle="tooltip" data-placement="bottom" title="Read Headlines of posts as Microblog"></button>                            
                                             </a>
                                         </li>
                                         <li style="margin-top: 5px;">
-                                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                                <i class="fa fa-user fa-3x"></i>
+                                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <i class="fa fa-user fa-3x profile-icon-color" data-toggle="tooltip" data-placement="right" title="Profile"></i>
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                                 <li><a href="user_profile.html"><i class="fa fa-user"></i> <span class="profile-menu-text">Profile</span></a></li>
@@ -128,7 +128,7 @@
                                         </li>                                        
                                     </ul>
                                 </div>  
-                            </div>                    
+                            </div>           
                         </div>    
                     </div>                    
                 </div><!-- /.navbar-collapse -->
@@ -2324,7 +2324,7 @@
             </div>
         </div>
         <!-- Settings - Change password - modal -->    
-        <div class="modal fade" id="ChangePasswordModal" tabindex="-1" role="dialog" aria-labelledby="ChangePasswordModalLabel">
+        <div class="modal fade" id="ChangePasswordModal" tabindex="-1" role="dialog" aria-labelledby="ChangePasswordModalLabel" data-backdrop="static" aria-hidden="true">
             <!--<div class="modal-dialog modal-lg">-->
             <div class="modal-dialog modal-md" role="document">                 
                 <div class="modal-content nopadding">
@@ -2373,7 +2373,7 @@
             </div>
         </div>
         <!-- Settings - Get Authorized User of your Account - modal -->    
-        <div class="modal fade" id="AuthorizedModal" tabindex="-1" role="dialog" aria-labelledby="AuthorizedLabel">
+        <div class="modal fade" id="AuthorizedModal" tabindex="-1" role="dialog" aria-labelledby="AuthorizedLabel" data-backdrop="static" aria-hidden="true">
             <!--<div class="modal-dialog modal-lg">-->
             <div class="modal-dialog modal-md" role="document">                 
                 <div class="modal-content nopadding">
@@ -2438,7 +2438,7 @@
             </div>
         </div>
         <!-- Settings - Change Username - modal -->    
-        <div class="modal fade" id="ChangeUsernameModal" tabindex="-1" role="dialog" aria-labelledby="ChangeUsernameLabel">
+        <div class="modal fade" id="ChangeUsernameModal" tabindex="-1" role="dialog" aria-labelledby="ChangeUsernameLabel" data-backdrop="static" aria-hidden="true">
             <!--<div class="modal-dialog modal-lg">-->
             <div class="modal-dialog modal-md" role="document">                 
                 <div class="modal-content nopadding">
@@ -2489,7 +2489,7 @@
             </div>
         </div>
         <!-- Settings - Set Background Color - modal -->    
-        <div class="modal fade" id="SetBackgroundModal" tabindex="-1" role="dialog" aria-labelledby="SetBackgroundLabel">
+        <div class="modal fade" id="SetBackgroundModal" tabindex="-1" role="dialog" aria-labelledby="SetBackgroundLabel" data-backdrop="static" aria-hidden="true">
             <!--<div class="modal-dialog modal-lg">-->
             <div class="modal-dialog modal-md" role="document">                 
                 <div class="modal-content nopadding">
@@ -2592,6 +2592,19 @@
                     opacity: 0.2,
                     width: '98%',
                     size: '10px',
+                });
+                $('[data-toggle="tooltip"]').tooltip();
+                $("#ChangePasswordModal").on('click', 'button[data-dismiss]', function () {
+                    window.location.reload();
+                });
+                $("#AuthorizedModal").on('click', 'button[data-dismiss]', function () {
+                    window.location.reload();
+                });
+                $("#ChangeUsernameModal").on('click', 'button[data-dismiss]', function () {
+                    window.location.reload();
+                });
+                $("#SetBackgroundModal").on('click', 'button[data-dismiss]', function () {
+                    window.location.reload();
                 });
             });
         </script>

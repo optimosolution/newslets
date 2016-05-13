@@ -735,3 +735,7 @@ img .profile-picture2{
     background-color: #C1C2C4;
     padding: 10px 20px 0px 20px;
 }
+.profile-icon-color{
+    clear: both;
+    color: #57575A;
+}

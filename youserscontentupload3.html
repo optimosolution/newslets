@@ -51,8 +51,8 @@
                     </ul>
                     <ul class="nav navbar-nav navbar-left">                        
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                <button class="nlicon_ring"></button>
+                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="nlicon_ring" data-toggle="tooltip" data-placement="right" title="Relevant Useful Comment"></button>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li><a href="#" data-toggle="modal" data-target="#RelevantModal">Relevant</a></li>
@@ -62,22 +62,22 @@
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#ActivitiesModal">
-                                <button class="nlicon_notification"></button>
+                                <button class="nlicon_notification" data-toggle="tooltip" data-placement="bottom" title="Engagement Notifcations"></button>
                             </a>
                         </li>
                         <li>
                             <a href="#" data-toggle="modal" data-target="#ArchiveModal">
-                                <button class="nlicon_archive"></button>
+                                <button class="nlicon_archive" data-toggle="tooltip" data-placement="bottom" title="Results of social Archive"></button>
                             </a>
                         </li>
                         <li>
                             <a href="dashboard_user.html">
-                                <button class="nlicon_dashboard"></button>
+                                <button class="nlicon_dashboard" data-toggle="tooltip" data-placement="bottom" title="Dashboard"></button>
                             </a>
                         </li>
                         <li style="margin-top: 5px;">
-                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-original-title="Engagments" title="" data-placement="bottom" data-toggle="tooltip">
-                                <i class="fa fa-user fa-3x"></i>
+                            <a href="#" class="dropdown-toggle" type="button" id="Engagements" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="color:#666;">
+                                <i class="fa fa-user fa-3x" data-toggle="tooltip" data-placement="bottom" title="Profile"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li><a href="user_profile.html"><i class="fa fa-user"></i> <span class="profile-menu-text">Profile</span></a></li>
@@ -252,6 +252,7 @@
                     opacity: 0.2,
                     size: '10px',
                 });
+                $('[data-toggle="tooltip"]').tooltip();
             });
         </script>
     </body>
