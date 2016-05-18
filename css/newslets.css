@@ -748,3 +748,8 @@ img .profile-picture2{
     text-align: center;
     font-style: italic;
 }
+.career-bg{
+    background: url("../img/bg/career_bg.png") no-repeat;
+    min-height: 706px;
+    background-position: calc(100% - 65px) calc(100% - 20px); 
+}
