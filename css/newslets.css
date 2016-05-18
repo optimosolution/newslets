@@ -665,7 +665,7 @@ img .profile-picture2{
     background:transparent url("../img/bg/snap_bg.png") repeat-x;
 }
 .single-page-bg{
-    background:#CBCC68 url("../img/bg/snap_bg.png") repeat-x;
+    background:#CCD16B url("../img/bg/snap_bg.png") repeat-x;
 }
 .snap-story-title{
     font-size: 20px;
@@ -738,4 +738,13 @@ img .profile-picture2{
 .profile-icon-color{
     clear: both;
     color: #57575A;
+}
+.about-highlight-top{
+    background-color: #DEDFE1;
+    padding: 15px;
+}
+.about-qoute{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
 }
