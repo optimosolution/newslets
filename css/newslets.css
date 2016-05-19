@@ -760,3 +760,7 @@ img .profile-picture2{
 .text-bold{
     font-weight: 800;
 }
+.faq-header-title{
+    margin-top: 20px;
+    font-size: 26px;
+}
