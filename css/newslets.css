@@ -764,3 +764,7 @@ img .profile-picture2{
     margin-top: 20px;
     font-size: 26px;
 }
+.popover{
+    width: 500px;
+    max-width: 500px;
+}
