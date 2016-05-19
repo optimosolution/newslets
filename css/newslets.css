@@ -671,6 +671,10 @@ img .profile-picture2{
     font-size: 20px;
     margin-top: 20px;
 }
+.knowwhy-title{
+    font-size: 16px;
+    margin-top: 25px;
+}
 .snap-story-upload{
     background-color: #F0F0F0;
     text-align: center;
@@ -752,4 +756,7 @@ img .profile-picture2{
     background: url("../img/bg/career_bg.png") no-repeat;
     min-height: 706px;
     background-position: calc(100% - 65px) calc(100% - 20px); 
+}
+.text-bold{
+    font-weight: 800;
 }
