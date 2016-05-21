@@ -774,4 +774,8 @@ img .profile-picture2{
 .popover{
     width: 500px;
     max-width: 500px;
+    background: #D3EFFB;
+}
+.popover.right .arrow:after {
+    border-right-color: #D3EFFB;
 }
